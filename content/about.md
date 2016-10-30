@@ -5,6 +5,7 @@ title = "About Michael"
 type = "page"
 
 +++
+He buys his girlfriend flowers. 
 Hugo is a static site engine written in Go.
 
 

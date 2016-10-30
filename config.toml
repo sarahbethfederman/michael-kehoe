@@ -45,7 +45,7 @@ canonifyurls = true
 [params.intro]
     header    = "Michael Kehoe"
 
-    paragraph = "Site Reliability Engineer creating and reliable infrastructure at scale at LinkedIn"
+    paragraph = "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
