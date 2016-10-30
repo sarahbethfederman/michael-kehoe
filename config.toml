@@ -47,8 +47,6 @@ canonifyurls = true
 
     paragraph = "Site Reliability Engineer creating and reliable infrastructure at scale at LinkedIn"
 
-    about     = "I am an engineer who prides himself on architecting reliable, scalable infrastructure. I specialise in maintaining large system infrastructure as demonstrated by work at LinkedIn (applications) and at The University of Queensland (networks)."
-
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
 # This is optional
@@ -100,7 +98,7 @@ canonifyurls = true
     wordpress       = ""
     tumblr          = ""
     xing            = ""
-    linkedin        = ""
+    linkedin        = "michaelkkehoe"
     slideshare      = ""
     stackoverflow   = ""
     reddit          = ""
@@ -110,4 +108,4 @@ canonifyurls = true
     facebook_admin  = ""
     twitter_domain  = ""
     twitter         = "matrixtek"
-    email           = "mkehoe@linkedin.com"
+    email           = ""
