@@ -8,7 +8,7 @@ featured = ""
 featuredalt = ""
 featuredpath = ""
 linktitle = ""
-title = "She's really the best, right? :)"
+title = "She's really the best, right?"
 type = "post"
 
 +++
