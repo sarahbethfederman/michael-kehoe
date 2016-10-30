@@ -1,32 +1,12 @@
 +++
-date = "2014-04-09T00:00:00+00:00"
+date = "2016-10-30T00:00:00+00:00"
 draft = false
 title = "About Michael"
 type = "page"
 
 +++
-He buys his girlfriend flowers. 
-Hugo is a static site engine written in Go.
+I am an engineer who prides himself on architecting reliable, scalable infrastructure. 
 
+I specialise in maintaining large system infrastructure as demonstrated by work at LinkedIn (applications, automation & infrastructure) and at The University of Queensland (networks). I possess high-level skills in maintaining Linux and Windows servers and their respective infrastructure services. My interpersonal skills allow me to interact with clients and colleagues in a professional manner using exemplary communication skills.
 
-It makes use of a variety of open source projects including:
-
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
-
-Learn more and contribute on [GitHub](https://github.com/spf13).
-
-## Setup
-
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+Previous work experience has included; building small satellites at NASA and writing thermal environments software at Rio Tinto.
