@@ -14,4 +14,4 @@ type = "post"
 +++
 Hi everyone,
 
-I'm kick-starting another effort to regularly blog and update my site. A big thank you to [Sarah Federman](https://www.linkedin.com/in/sarahfederman) who helped put this site together. 
+I'm kick-starting another effort to regularly blog and update my site. A big thank you to [Sarah Federman](https://www.linkedin.com/in/sarahfederman) who put this site together. 
