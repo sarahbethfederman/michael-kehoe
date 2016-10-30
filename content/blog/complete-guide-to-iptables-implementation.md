@@ -32,3 +32,8 @@ In this case, we're going to focus on the INPUT chain (Incoming to firewall. For
 **Automation**
 I implement these rules using the puppet-iptables module. The module is regularly updated and has a very large feature-set. 
 
+References:
+https://gist.github.com/jirutka/3742890
+http://www.cyberciti.biz/tips/linux-iptables-10-how-to-block-common-attack.html
+
+
