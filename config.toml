@@ -47,7 +47,7 @@ canonifyurls = true
 
     paragraph = "Site Reliability Engineer creating and reliable infrastructure at scale at LinkedIn"
 
-    about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+    about     = "I am an engineer who prides himself on architecting reliable, scalable infrastructure. I specialise in maintaining large system infrastructure as demonstrated by work at LinkedIn (applications) and at The University of Queensland (networks)."
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
