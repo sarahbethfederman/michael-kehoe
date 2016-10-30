@@ -1,7 +1,7 @@
 +++
-author = ""
+author = "mkehoe"
 categories = []
-date = "2016-10-30T16:00:53.161-07:00"
+date = "2016-11-01T12:00:00+00:00"
 description = ""
 draft = true
 featured = ""
@@ -12,3 +12,6 @@ title = "Hello World (Again)"
 type = "post"
 
 +++
+Hi everyone,
+
+I'm kick-starting another effort to regularly blog and update my site. A big thank you to [Sarah Federman](https://www.linkedin.com/in/sarahfederman) who helped put this site together. 
