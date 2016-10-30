@@ -1,7 +1,7 @@
 +++
 author = ""
 categories = []
-date = "2016-10-30T16:13:06.832-07:00"
+date = "2016-10-30T16:13:06-07:00"
 description = ""
 draft = true
 featured = ""
