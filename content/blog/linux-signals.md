@@ -1,7 +1,7 @@
 +++
-author = ""
-categories = []
-date = "2016-10-30T17:14:32.970-07:00"
+author = "mkehoe"
+categories = ["linux", "signals"]
+date = "2016-10-30T17:14:00+00:00"
 description = ""
 draft = true
 featured = ""
