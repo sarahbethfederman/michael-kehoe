@@ -1,6 +1,6 @@
 +++
-author = ""
-categories = []
+author = "Michael Kehoe"
+categories = ["linux", "filesystems,"]
 date = "2016-10-30T16:53:00+00:00"
 description = ""
 draft = true
@@ -9,6 +9,7 @@ featuredalt = ""
 featuredpath = ""
 linktitle = ""
 title = "Linux Filesystems explained"
+type = "post"
 
 +++
 References:
