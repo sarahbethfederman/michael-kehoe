@@ -11,10 +11,11 @@ title = "Michael Kehoe"
 [[menu.main]]
 name = "Recommended"
 url = "/recommended"
+weight = 2
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 2
+weight = 3
 [[menu.main]]
 identifier = "fa fa-newspaper-o"
 name = "Blog"
@@ -60,7 +61,7 @@ linkedin = "michaelkkehoe"
 medium = ""
 pinterest = ""
 reddit = ""
-slideshare = ""
+slideshare = "MichaelKehoe3"
 stackoverflow = ""
 tumblr = ""
 twitter = "matrixtek"
