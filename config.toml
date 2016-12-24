@@ -11,7 +11,7 @@ title = "Michael Kehoe"
 [[menu.main]]
 name = "Recommended"
 url = "/recommended"
-weight = 6
+weight = 7
 [[menu.main]]
 name = "About"
 url = "/about"
