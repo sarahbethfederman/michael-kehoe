@@ -10,8 +10,8 @@ theme = "hugo-future-imperfect"
 title = "Michael Kehoe"
 [[menu.main]]
 name = "Recommended"
-url = "/"
-weight = 5
+url = "/recommended"
+weight = 6
 [[menu.main]]
 name = "About"
 url = "/about"
