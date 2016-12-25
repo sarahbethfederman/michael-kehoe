@@ -22,13 +22,13 @@ This post will look at how to build and configure an NTP server and provide insi
 
 ### Assumptions
 
-1\. You are not exposing this server to the public internet.
+1\. You are not exposing this server to the public internet
 
-2\. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network.
+2\. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network
 
-3\. You are running a central set of time servers for your network. Every host should not be using external time servers.
+3\. If you \*\*really\*\* need very accurate time, do not run NTP servers on Virtual Machines or Containers.
 
-3\. If you **really** need very accurate time, do not run NTP servers on Virtual Machines or Containers.
+4\. You are running a firewall that blocks packets that come from outside the network on UDP port 123
 
 ### Installation
 
@@ -41,12 +41,28 @@ Linux based systems:
 `yum install ntp`
 
 ### Configuration
+This is an example configuration for a Linux Server with upstream time servers and NTP clients connecting to the server from the 192.168.1.0/24 network.
 <script src="https://gist.github.com/michael-kehoe/3671aefc504de4895a151532025ff680.js"></script>
+
+iptables rules:
+
+`-A INPUT -s 0/0 -d 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT`
+
+`-A OUTPUT -s 0/0 -d 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT`
 
 ### Automation
 
-I strongly suggest you use some type of configuration management system to manage ntp configuration over a fleet of systems.
+I strongly suggest you use some type of configuration management system to manage NTP configuration over a fleet of systems.
 
-I recomment:
+I recommend:
 
-*   Puppet - [puppetlabs-ntp](https://github.com/puppetlabs/puppetlabs-ntp)
+* Puppet - [puppetlabs-ntp](https://github.com/puppetlabs/puppetlabs-ntp)
+
+### References
+* [https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse](https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse)
+* [https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns](https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns)
+* [https://github.com/puppetlabs/puppetlabs-ntp/](https://github.com/puppetlabs/puppetlabs-ntp/)
+* [http://www.team-cymru.org/secure-ntp-template.html](http://www.team-cymru.org/secure-ntp-template.html)
+* [http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/](http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/)
+* [http://doc.ntp.org/4.1.1/accopt.htm](http://doc.ntp.org/4.1.1/accopt.htm)
+* [http://doc.ntp.org/4.1.1/miscopt.htm](http://doc.ntp.org/4.1.1/miscopt.htm)
