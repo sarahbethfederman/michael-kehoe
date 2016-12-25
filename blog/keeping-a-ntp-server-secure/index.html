@@ -69,7 +69,7 @@ Assumptions 1. You are not exposing this server to the public internet
 
 
 <meta itemprop="dateModified" content="2016-12-23T11:19:32-08:00" />
-<meta itemprop="wordCount" content="242">
+<meta itemprop="wordCount" content="240">
 
 
 
@@ -426,9 +426,9 @@ ga('send', 'pageview');
 
 <p>iptables rules:</p>
 
-<p><code>-A INPUT -s 0/0 -d 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT</code></p>
+<p><code>-A INPUT -s 192.168.1.0/24 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT</code></p>
 
-<p><code>-A OUTPUT -s 0/0 -d 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT</code></p>
+<p><code>-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT</code></p>
 
 <h3 id="automation">Automation</h3>
 

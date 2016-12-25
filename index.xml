@@ -193,9 +193,9 @@
 
 &lt;p&gt;iptables rules:&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;-A INPUT -s 0/0 -d 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-A INPUT -s 192.168.1.0/24 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;-A OUTPUT -s 0/0 -d 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;automation&#34;&gt;Automation&lt;/h3&gt;
 
