@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog-rsses on Michael Kehoe</title>
-    <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/index.xml</link>
-    <description>Recent content in Blog-rsses on Michael Kehoe</description>
+    <title>Michael Kehoe</title>
+    <link>https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml</link>
+    <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Dec 2016 11:19:32 -0800</lastBuildDate>
-    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Keeping a NTP server secure</title>
@@ -58,18 +57,6 @@
 &lt;ul&gt;
 &lt;li&gt;Puppet - &lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp&#34;&gt;puppetlabs-ntp&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello World (Again)</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</link>
-      <pubDate>Tue, 01 Nov 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</guid>
-      <description>&lt;p&gt;Hi everyone,&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m kick-starting another effort to regularly blog and update my site. A big thank you to &lt;a href=&#34;http://sarah.codes/&#34;&gt;Sarah Federman&lt;/a&gt; who put this site together. She&amp;rsquo;s awesome and open to hire.&lt;/p&gt;
 </description>
     </item>
     

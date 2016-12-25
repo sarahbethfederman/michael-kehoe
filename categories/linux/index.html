@@ -2,6 +2,8 @@
 
 
     
+        
+    
 
 
 
@@ -11,7 +13,7 @@
 <html>
     <head>
         
-            <title>Publications - Michael Kehoe</title>
+            <title>linux Posts - Michael Kehoe</title>
         
 
         <meta charset="utf-8" />
@@ -28,24 +30,13 @@
         
 
         
-
-  <meta name="twitter:card" content="summary"/>
-
-
-
-<meta name="twitter:title" content="Publications"/>
-<meta name="twitter:description" content=" Conferences 2017 SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn  Coming Soon  2016 Couchbase Connect 2016: Going all In: From single use-case to many  Presentation: SlideShare Video: YouTube  Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn  Presentation: SlideShare Video: YouTube  SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems  Presentation: SlideShare Video: YouTube  SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent  Presentation: SlideShare Video: YouTube  2015 Couchbase Connect 2015: Couchbase at LinkedIn 2015  Presentation: SlideShare Video: YouTube  Strata &#43; Hadoop World 2015: Couchbase, Kafka &amp; Hadoop at LinkedIn  Presentation: SlideShare  2014 Couchbase Connect 2014: Using Couchbase  Presentation: SlideShare Video: YouTube  Talks 2016 Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase  Presentation: SlideShare  SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting  Presentation: SlideShare  Articles 2016 LinkedIn Engineering Blog: Getting to know Michael Kehoe  LinkedIn Engineering Blog  "/>
-<meta name="twitter:site" content="@matrixtek"/>
+        <meta property="og:title" content="linux" />
+<meta property="og:description" content="Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/" />
 
 
-        <meta property="og:title" content="Publications" />
-<meta property="og:description" content=" Conferences 2017 SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn  Coming Soon  2016 Couchbase Connect 2016: Going all In: From single use-case to many  Presentation: SlideShare Video: YouTube  Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn  Presentation: SlideShare Video: YouTube  SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems  Presentation: SlideShare Video: YouTube  SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent  Presentation: SlideShare Video: YouTube  2015 Couchbase Connect 2015: Couchbase at LinkedIn 2015  Presentation: SlideShare Video: YouTube  Strata &#43; Hadoop World 2015: Couchbase, Kafka &amp; Hadoop at LinkedIn  Presentation: SlideShare  2014 Couchbase Connect 2014: Using Couchbase  Presentation: SlideShare Video: YouTube  Talks 2016 Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase  Presentation: SlideShare  SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting  Presentation: SlideShare  Articles 2016 LinkedIn Engineering Blog: Getting to know Michael Kehoe  LinkedIn Engineering Blog  " />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://sarahbethfederman.github.io/michael-kehoe.com/publications/" />
-
-
-<meta property="og:updated_time" content="2016-12-24T15:39:30-08:00"/>
-
+<meta property="og:updated_time" content="2016-12-23T11:19:32-08:00"/>
 
 
 
@@ -56,16 +47,9 @@
 
 
         
-<meta itemprop="name" content="Publications">
-<meta itemprop="description" content=" Conferences 2017 SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn  Coming Soon  2016 Couchbase Connect 2016: Going all In: From single use-case to many  Presentation: SlideShare Video: YouTube  Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn  Presentation: SlideShare Video: YouTube  SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems  Presentation: SlideShare Video: YouTube  SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent  Presentation: SlideShare Video: YouTube  2015 Couchbase Connect 2015: Couchbase at LinkedIn 2015  Presentation: SlideShare Video: YouTube  Strata &#43; Hadoop World 2015: Couchbase, Kafka &amp; Hadoop at LinkedIn  Presentation: SlideShare  2014 Couchbase Connect 2014: Using Couchbase  Presentation: SlideShare Video: YouTube  Talks 2016 Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase  Presentation: SlideShare  SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting  Presentation: SlideShare  Articles 2016 LinkedIn Engineering Blog: Getting to know Michael Kehoe  LinkedIn Engineering Blog  ">
+<meta itemprop="name" content="linux">
+<meta itemprop="description" content="Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA.">
 
-
-<meta itemprop="dateModified" content="2016-12-24T15:39:30-08:00" />
-<meta itemprop="wordCount" content="150">
-
-
-
-<meta itemprop="keywords" content="linux,ntp,security," />
 
         
 
@@ -245,113 +229,88 @@ ga('send', 'pageview');
 
     
     <div id="main">
-        <article class="post">
-            
-            <header>
+        <h1>linux</h1>
+        
+        
+            <article class="post">
+    <header>
     <div class="title">
         
-            <h1><a href="https://sarahbethfederman.github.io/michael-kehoe.com/publications/">Publications</a></h1>
+            <h2><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/">Keeping a NTP server secure</a></h2>
+        
+        
+    </div>
+    <div class="meta">
+        
             
+        
+
+        <time class="published"
+            datetime='2016-12-23'>
+            December 23, 2016</time>
+        <span class="author">mkehoe</span>
         
         
     </div>
 </header>
 
-            <div id="content">
+    
+
+    <p>Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet.
+2. You are running several NTP servers within your network to keep it highly-available.</p>
+
+    <footer>
+        <ul class="actions">
+            <li><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/" class="button big">Continue Reading</a></li>
+        </ul>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
                 
+                
+                    
 
-<h1 id="conferences">Conferences</h1>
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
 
-<h2 id="2017">2017</h2>
-
-<h3 id="srecon17-americas-reducing-mttr-and-false-escalations-event-correlation-at-linkedin">SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn</h3>
-
-<ul>
-<li>Coming Soon</li>
+    
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/ntp'>ntp</a></li>
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux'>linux</a></li>
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/security'>security</a></li>
+    
 </ul>
 
-<h2 id="2016">2016</h2>
+    </footer>
+</article>
 
-<h3 id="couchbase-connect-2016-going-all-in-from-single-use-case-to-many">Couchbase Connect 2016: Going all In: From single use-case to many</h3>
+        
 
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-68421388">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=1shb4UZON_I&amp;t=3s">YouTube</a></li>
+        
+<ul class="actions pagination">
+    
+        <li><a href="#" class="disabled button big previous">Previous Page</a></li>
+    
+
+    
+        <li><a href="#" class="disabled button big next">Next Page</a></li>
+    
 </ul>
 
-<h3 id="couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin">Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=Dv6SWGfRWn0&amp;t=30s">YouTube</a></li>
-</ul>
-
-<h3 id="saltconf16-using-saltstack-to-auto-triage-and-remediate-production-systems">SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/michael-kehoe-61165500">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=4LapQ9Zhr_E">YouTube</a></li>
-</ul>
-
-<h3 id="srecon16-americas-college-student-to-sre-onboarding-your-entry-level-talent">SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=TYX5ihgIL7s">YouTube</a></li>
-</ul>
-
-<h2 id="2015">2015</h2>
-
-<h3 id="couchbase-connect-2015-couchbase-at-linkedin-2015">Couchbase Connect 2015: Couchbase at LinkedIn 2015</h3>
-
-<ul>
-<li>Presentation: <a href="https://www.slideshare.net/slideshow/embed_code/key/9quM4qNUXJ0KO5">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=TmjY1HJemi4">YouTube</a></li>
-</ul>
-
-<h3 id="strata-hadoop-world-2015-couchbase-kafka-hadoop-at-linkedin">Strata + Hadoop World 2015: Couchbase, Kafka &amp; Hadoop at LinkedIn</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611">SlideShare</a></li>
-</ul>
-
-<h2 id="2014">2014</h2>
-
-<h3 id="couchbase-connect-2014-using-couchbase">Couchbase Connect 2014: Using Couchbase</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014">SlideShare</a></li>
-<li>Video: <a href="https://www.youtube.com/watch?v=J9PTmSwZE-8">YouTube</a></li>
-</ul>
-
-<h1 id="talks">Talks</h1>
-
-<h2 id="2016-1">2016</h2>
-
-<h3 id="couchbase-silicon-valley-meetup-janurary-linkedin-s-big-data-pipeline-with-kafka-hadoop-and-couchbase">Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/couchbase-meetup-jan-2016">SlideShare</a></li>
-</ul>
-
-<h3 id="southbay-sre-meetup-jan-2016-linkedin-traffic-shifting">SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting</h3>
-
-<ul>
-<li>Presentation: <a href="http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016">SlideShare</a></li>
-</ul>
-
-<h1 id="articles">Articles</h1>
-
-<h2 id="2016-2">2016</h2>
-
-<h3 id="linkedin-engineering-blog-getting-to-know-michael-kehoe">LinkedIn Engineering Blog: Getting to know Michael Kehoe</h3>
-
-<ul>
-<li><a href="https://engineering.linkedin.com/blog/2016/02/getting-to-know-michael-kehoe">LinkedIn Engineering Blog</a></li>
-</ul>
-
-            </div>
-        </article>
     </div>
     
 <section id="sidebar">
@@ -371,6 +330,9 @@ ga('send', 'pageview');
                 </header>
             
             <ul class="icons">
+                
+                    <li><a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
             </ul>
@@ -476,6 +438,9 @@ ga('send', 'pageview');
     
         <section id="footer">
             <ul class="icons">
+                
+                    <li><a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml" type="application/rss+xml"
+                        target="_blank" title="RSS" class="fa fa-rss"></a></li>
                 
                 
             </ul>
