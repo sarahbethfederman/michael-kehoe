@@ -22,11 +22,13 @@ This post will look at how to build and configure an NTP server and provide insi
 
 ### Assumptions
 
-1\. You are not exposing this server to the public internet
+1\. You are not exposing this server to the public internet.
 
-2\. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network
+2\. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network.
 
-3\. If you \*\*really\*\* need very accurate time, do not run NTP servers on Virtual Machines or Containers.
+3\. You are running a central set of time servers for your network. Every host should not be using external time servers.
+
+3\. If you **really** need very accurate time, do not run NTP servers on Virtual Machines or Containers.
 
 ### Installation
 
@@ -39,7 +41,8 @@ Linux based systems:
 `yum install ntp`
 
 ### Configuration
-<script src="https://gist.github.com/michael-kehoe/3671aefc504de4895a151532025ff680.js"></script>
+
+{% gist 3671aefc504de4895a151532025ff680 %}
 
 ### Automation
 
@@ -47,4 +50,4 @@ I strongly suggest you use some type of configuration management system to manag
 
 I recomment:
 
-* Puppet - [puppetlabs-ntp](https://github.com/puppetlabs/puppetlabs-ntp)
+*   Puppet - [puppetlabs-ntp](https://github.com/puppetlabs/puppetlabs-ntp)
