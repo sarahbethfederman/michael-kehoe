@@ -46,9 +46,9 @@ This is an example configuration for a Linux Server with upstream time servers a
 
 iptables rules:
 
-`-A INPUT -s 0/0 -d 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT`
+`-A INPUT -s 192.168.1.0/24 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT`
 
-`-A OUTPUT -s 0/0 -d 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT`
+`-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT`
 
 ### Automation
 
