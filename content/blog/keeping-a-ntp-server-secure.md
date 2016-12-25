@@ -41,8 +41,7 @@ Linux based systems:
 `yum install ntp`
 
 ### Configuration
-
-{% gist 3671aefc504de4895a151532025ff680 %}
+<script src="https://gist.github.com/michael-kehoe/3671aefc504de4895a151532025ff680.js"></script>
 
 ### Automation
 
