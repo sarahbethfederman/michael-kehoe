@@ -9,6 +9,10 @@ publishdir = "docs"
 theme = "hugo-future-imperfect"
 title = "Michael Kehoe"
 [[menu.main]]
+name = "Publications"
+url = "/publications"
+weight = 4
+[[menu.main]]
 name = "About"
 url = "/about"
 weight = 3
