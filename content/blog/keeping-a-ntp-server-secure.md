@@ -12,6 +12,39 @@ title = "Keeping a NTP server secure"
 type = "post"
 
 +++
-Over the years, black-hats have used the Network Time Protocol (NTP) as an attack vector particularly for DDOS attacks.
+### Introduction
 
-Generally speaking, the root cause of these attacks is mis-configuration of the NTP server
+Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+
+### Assumptions
+
+1\. You are not exposing this server to the public internet
+
+2\. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network
+
+3\. If you \*\*really\*\* need very accurate time, do not run NTP servers on Virtual Machines or Containers.
+
+### Installation
+
+Debian based systems:
+
+`apt-get install ntp`
+
+Linux based systems:
+
+`yum install ntp`
+
+### Configuration
+<script src="https://gist.github.com/michael-kehoe/3671aefc504de4895a151532025ff680.js"></script>
+
+### Automation
+
+I strongly suggest you use some type of configuration management system to manage ntp configuration over a fleet of systems.
+
+I recomment:
+
+* Puppet - [puppetlabs-ntp](https://github.com/puppetlabs/puppetlabs-ntp)
