@@ -6,60 +6,8 @@
     <description>Recent content in Blog-rsses on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Dec 2016 11:19:32 -0800</lastBuildDate>
+    <lastBuildDate>Tue, 01 Nov 2016 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Keeping a NTP server secure</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</link>
-      <pubDate>Fri, 23 Dec 2016 11:19:32 -0800</pubDate>
-      
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</guid>
-      <description>
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.&lt;/p&gt;
-
-&lt;p&gt;Generally speaking, the cause of these attacks is due to NTP mis-configuration.&lt;/p&gt;
-
-&lt;p&gt;This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.&lt;/p&gt;
-
-&lt;h3 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h3&gt;
-
-&lt;p&gt;1. You are not exposing this server to the public internet.&lt;/p&gt;
-
-&lt;p&gt;2. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network.&lt;/p&gt;
-
-&lt;p&gt;3. You are running a central set of time servers for your network. Every host should not be using external time servers.&lt;/p&gt;
-
-&lt;p&gt;3. If you &lt;strong&gt;really&lt;/strong&gt; need very accurate time, do not run NTP servers on Virtual Machines or Containers.&lt;/p&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;p&gt;Debian based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;apt-get install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Linux based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;yum install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;configuration&#34;&gt;Configuration&lt;/h3&gt;
-
-&lt;script src=&#34;https://gist.github.com/michael-kehoe/3671aefc504de4895a151532025ff680.js&#34;&gt;&lt;/script&gt;
-
-&lt;h3 id=&#34;automation&#34;&gt;Automation&lt;/h3&gt;
-
-&lt;p&gt;I strongly suggest you use some type of configuration management system to manage ntp configuration over a fleet of systems.&lt;/p&gt;
-
-&lt;p&gt;I recomment:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Puppet - &lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp&#34;&gt;puppetlabs-ntp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
     
     <item>
       <title>Hello World (Again)</title>
