@@ -25,18 +25,22 @@ Coming Soon
 ----
 ### Couchbase Connect 2016: Going all In: From single use-case to many
 Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-68421388)
+
 Video: [YouTube](https://www.youtube.com/watch?v=1shb4UZON_I&t=3s)
 
 ### Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn
 Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin)
+
 Video: [YouTube](https://www.youtube.com/watch?v=Dv6SWGfRWn0&t=30s)
 
 ### SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems
 Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/michael-kehoe-61165500)
+
 Video: [YouTube](https://www.youtube.com/watch?v=4LapQ9Zhr_E)
 
 ### SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent
 Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent)
+
 Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
 2015
@@ -44,6 +48,7 @@ Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
 ### Couchbase Connect 2015: Couchbase at LinkedIn 2015
 Presentation: [SlideShare](https://www.slideshare.net/slideshow/embed_code/key/9quM4qNUXJ0KO5)
+
 Video: [YouTube](https://www.youtube.com/watch?v=TmjY1HJemi4)
 
 ### Strata + Hadoop World 2015: Couchbase, Kafka & Hadoop at LinkedIn
