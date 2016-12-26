@@ -22,6 +22,10 @@ Conferences
 
 * Coming Soon
 
+### SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale
+
+* Coming Soon
+
 
 
 2016
@@ -48,7 +52,6 @@ Conferences
 * Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
 
-
 2015
 ----
 
@@ -62,8 +65,6 @@ Conferences
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611)
 
 
-
-
 2014
 ----
 
@@ -71,7 +72,6 @@ Conferences
 
 * Presentation: [SlideShare](http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014)
 * Video: [YouTube](https://www.youtube.com/watch?v=J9PTmSwZE-8)
-
 
 
 
@@ -88,7 +88,6 @@ Talks
 ### SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting
 
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016)
-
 
 
 
