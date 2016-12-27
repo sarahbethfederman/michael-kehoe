@@ -11,11 +11,11 @@ title = "Michael Kehoe"
 [[menu.main]]
 name = "Publications"
 url = "/publications"
-weight = 5
+weight = 3
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 4
 [[menu.main]]
 name = "Recommended"
 url = "/recommended"
