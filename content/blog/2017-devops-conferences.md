@@ -9,6 +9,7 @@ featuredalt = ""
 featuredpath = ""
 linktitle = ""
 title = "2017 Devops Conferences"
+type = "post"
 
 +++
 Hat-tip to Sarah Drasner who came up with a [list](https://css-tricks.com/guide-2017-conferences/) of 2017 Front-end conferences that inspired this list.
