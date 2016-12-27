@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Kehoe</title>
+    <link>https://sarahbethfederman.github.io/michael-kehoe.com/categories/conferences/index.xml</link>
+    <description>Recent content on Michael Kehoe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2017 Devops Conferences</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</link>
+      <pubDate>Mon, 26 Dec 2016 18:44:44 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</guid>
+      <description>
+
+&lt;p&gt;Hat-tip to Sarah Drasner who came up with a &lt;a href=&#34;https://css-tricks.com/guide-2017-conferences/&#34;&gt;list&lt;/a&gt; of 2017 Front-end conferences that inspired this list.&lt;/p&gt;
+
+&lt;p&gt;If I have missed any, please tweet me at &lt;a href=&#34;https://twitter.com/matrixtek&#34;&gt;@matrixtek&lt;/a&gt; and I’ll review it being added to the list.&lt;/p&gt;
+
+&lt;p&gt;Note: There is a larger list over &lt;a href=&#34;http://devopsconferences.org/&#34;&gt;here&lt;/a&gt; that lists a number of the smaller conferences&lt;/p&gt;
+
+&lt;h3 id=&#34;january&#34;&gt;January&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;february&#34;&gt;February&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;march&#34;&gt;March&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Elasticon 2017&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.usenix.org/conference/srecon17americas&#34;&gt;SRECon17 Americas&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/strata/strata-ca&#34;&gt;Strata + Hadoop World 2017&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;april&#34;&gt;April&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;may&#34;&gt;May&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://apachecon.com/&#34;&gt;ApacheCon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://monitorama.com/&#34;&gt;Monitorama&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2017/&#34;&gt;PyCon17 US&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.usenix.org/conference/srecon17asia&#34;&gt;SRECon17 Asia/ Australia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;june&#34;&gt;June&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Velocity San Jose&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;july&#34;&gt;July&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://gophercon.com/&#34;&gt;GopherCon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;august&#34;&gt;August&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;SRECon17 Europe/ Middle East/ Africa&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;september&#34;&gt;September&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;october&#34;&gt;October&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LISA17&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/velocity&#34;&gt;Velocity London&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/velocity&#34;&gt;Velocity New York&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;november&#34;&gt;November&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;december&#34;&gt;December&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;None listed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;no-date-listed&#34;&gt;No Date Listed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://saltconf.com/&#34;&gt;SaltConf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Couchbase Connect 17&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
