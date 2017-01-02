@@ -24,31 +24,40 @@ Note: There is a larger list over [here](http://devopsconferences.org/) that lis
 
 ### February
 
-* None listed
+* [Devops Days Charlotte](https://www.devopsdays.org/events/2017-charlotte/welcome/)
 
 ### March
 
+* [Devops Days Baltimore](https://www.devopsdays.org/events/2017-baltimore/welcome/)
+* [Devops Days Vancouver](https://www.devopsdays.org/events/2017-vancouver/welcome/)
 * Elasticon 2017
 * [SRECon17 Americas](https://www.usenix.org/conference/srecon17americas)
 * [Strata + Hadoop World 2017](http://conferences.oreilly.com/strata/strata-ca)
 
 ### April
 
-* None listed
+* [Devops Days Atlanta](https://www.devopsdays.org/events/2017-atlanta/welcome/)
+* [Devops Days Seattle](https://www.devopsdays.org/events/2017-seattle/welcome/)
 
 ### May
 
 * [ApacheCon](http://apachecon.com/)
+* [Devops Days Austin](https://www.devopsdays.org/events/2017-austin/welcome/)
+* [Devops Days Salt Lake City](https://www.devopsdays.org/events/2017-salt-lake-city/welcome/)
+* [Devops Days Toronto](https://www.devopsdays.org/events/2017-toronto/welcome/)
+* [Devops Days Zurich](https://www.devopsdays.org/events/2017-zurich/welcome/)
 * [Monitorama](http://monitorama.com/)
 * [PyCon17 US](https://us.pycon.org/2017/)
 * [SRECon17 Asia/ Australia](https://www.usenix.org/conference/srecon17asia)
 
 ### June
 
+* [Devops Days Amsterdam](https://www.devopsdays.org/events/2017-amsterdam/welcome/)
 * Velocity San Jose
 
 ### July
 
+* [Devops Days Minneapolis](https://www.devopsdays.org/events/2017-minneapolis/welcome/)
 * [GopherCon](http://gophercon.com/)
 
 ### August
@@ -57,7 +66,7 @@ Note: There is a larger list over [here](http://devopsconferences.org/) that lis
 
 ### September
 
-* None listed
+* [Devops Days Detroit](https://www.devopsdays.org/events/2017-detroit/welcome/)
 
 ### October
 
