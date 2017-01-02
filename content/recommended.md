@@ -12,12 +12,12 @@ title = "Recommended"
 type = "page"
 
 +++
-Updated: 23rd December 2016
+Updated: 1st January 2017
 
 ### Software
 
 * [Feedly](http://https://feedly.com/) - Online web-based RSS Reader
-* [LimeChat](http://limechat.net/mac/) - IRC applicationfor Mac
+* [LimeChat](http://limechat.net/mac/) - IRC application for Mac
 * [Quiver](https://itunes.apple.com/us/app/quiver-programmers-notebook/id866773894?mt=12) - Text Editor
 * [Slack](https://slack.com/) - Team-based instant-messaging
 
@@ -34,3 +34,4 @@ Updated: 23rd December 2016
 ### Blogs
 
 * [High Scalability](http://highscalability.com/) - Great learning place for systems design and architecture
+* [nixCraft](https://www.cyberciti.biz/) - Linux Tips, Hacks, Tutorials
