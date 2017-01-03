@@ -6,8 +6,20 @@
     <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Dec 2016 18:44:44 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2017 23:39:19 -0800</lastBuildDate>
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Command of the Day</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</link>
+      <pubDate>Mon, 02 Jan 2017 23:39:19 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</guid>
+      <description>&lt;p&gt;There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.&lt;/p&gt;
+
+&lt;p&gt;I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>2017 Devops Conferences</title>
