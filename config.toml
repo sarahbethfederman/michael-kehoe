@@ -1,5 +1,5 @@
 baseurl = "https://sarahbethfederman.github.io/michael-kehoe.com"
-canonifyurls = true
+canonifyUrls = true
 disqusShortname = "michael-kehoe"
 googleAnalytics = "UA-2048391-12"
 languageCode = "en-us"
@@ -26,15 +26,15 @@ name = "Blog"
 url = "/blog"
 weight = 1
 [params]
-categoriesbycount = true
+categoriesByCount = true
 description = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
-faviconversion = ""
-includereadingtime = true
-loadfavicon = true
-navbartitle = "Michael Kehoe"
-socialappearatbottom = true
-socialappearattop = true
-viewmorepostlink = "blog/"
+faviconVersion = ""
+includeReadingTime = true
+loadFavicon = true
+navbarTitle = "Michael Kehoe"
+socialAppearAtBottom = true
+socialAppearAtTop = true
+viewMorePostLink = "blog/"
 [params.intro]
 header = "Michael Kehoe"
 paragraph = "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"
