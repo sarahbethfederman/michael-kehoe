@@ -6,8 +6,60 @@
     <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 23:39:19 -0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Jan 2017 23:43:22 -0800</lastBuildDate>
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Command of the Day 1: compgen</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</link>
+      <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</guid>
+      <description>
+
+&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
+
+&lt;p&gt;Show all available commands, aliases and functions&lt;/p&gt;
+
+&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
+
+&lt;p&gt;compgen &lt;a href=&#34;1&#34;&gt;builtins&lt;/a&gt; - bash built-in commands, see bash(1)&lt;/p&gt;
+
+&lt;h3 id=&#34;help&#34;&gt;help&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;compgen: usage: compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
+
+&lt;p&gt;man 1 bash&lt;/p&gt;
+
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+
+&lt;p&gt;How are we going to create a list of commands for ‘Command of the Day’? Compgen!&lt;/p&gt;
+
+&lt;p&gt;compgen&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;-a: List of user aliases&lt;/li&gt;
+&lt;li&gt;-b: List of built-in shell commands&lt;/li&gt;
+&lt;li&gt;-c: List of all commands you can run&lt;/li&gt;
+&lt;li&gt;-e: List of shell variables&lt;/li&gt;
+&lt;li&gt;-k: List of built-in shell keywords&lt;/li&gt;
+&lt;li&gt;-A function: List of available bash functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;tip&#34;&gt;Tip&lt;/h1&gt;
+
+&lt;p&gt;Create an alias for compgen to show all functions: alias compgen=‘compgen -abckA function’. This will print in list format including all aliases, built-ins, commands and functions available&lt;/p&gt;
+
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&#34;&gt;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&#34;&gt;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Command of the Day</title>
