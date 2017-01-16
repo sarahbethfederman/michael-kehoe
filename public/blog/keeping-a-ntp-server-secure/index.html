@@ -1,0 +1,848 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Keeping a NTP server secure</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.18.1" />
+        
+    
+        
+    
+
+    
+
+    <link rel="apple-touch-icon-precomposed"
+        href='https://sarahbethfederman.github.io/michael-kehoe.com/favicon/apple-touch-icon-precomposed.png'>
+    <link rel="icon" href='https://sarahbethfederman.github.io/michael-kehoe.com/favicon/favicon.png'>
+    
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage"
+        content='/favicon/mstile.png'>
+
+
+
+        
+            <meta name="author" content="mkehoe">
+        
+        
+            
+                <meta name="description" content="Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA.">
+            
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="Keeping a NTP server secure"/>
+<meta name="twitter:description" content="Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet
+2. You are running several NTP servers within your network to keep it highly-available."/>
+<meta name="twitter:site" content="@matrixtek"/>
+
+
+        <meta property="og:title" content="Keeping a NTP server secure" />
+<meta property="og:description" content="Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet
+2. You are running several NTP servers within your network to keep it highly-available." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/" />
+
+
+<meta property="og:updated_time" content="2016-12-23T11:19:32-08:00"/>
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Keeping a NTP server secure">
+<meta itemprop="description" content="Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet
+2. You are running several NTP servers within your network to keep it highly-available.">
+
+
+<meta itemprop="dateModified" content="2016-12-23T11:19:32-08:00" />
+<meta itemprop="wordCount" content="242">
+
+
+
+<meta itemprop="keywords" content="command-of-the-day,conferences,linux,ntp,security," />
+
+        
+
+        
+
+        
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://sarahbethfederman.github.io/michael-kehoe.com/css/google-font.css" />
+            <link rel="stylesheet" href="https://sarahbethfederman.github.io/michael-kehoe.com/css/font-awesome.min.css" />
+            <link rel="stylesheet" href="https://sarahbethfederman.github.io/michael-kehoe.com/css/main.css" />
+            <link rel="stylesheet" href="https://sarahbethfederman.github.io/michael-kehoe.com/css/add-on.css" />
+            <link rel="stylesheet" href="https://sarahbethfederman.github.io/michael-kehoe.com/css/monokai-sublime.css">
+        
+
+        
+
+        
+        
+        
+            
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2048391-12', 'auto');
+ga('send', 'pageview');
+</script>
+
+        
+    </head>
+    <body>
+
+        
+        <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+        <h2><a href="https://sarahbethfederman.github.io/michael-kehoe.com/">Michael Kehoe</i></a></h2>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog">
+                        
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://sarahbethfederman.github.io/michael-kehoe.com/recommended">
+                        Recommended
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://sarahbethfederman.github.io/michael-kehoe.com/publications">
+                        Publications
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://sarahbethfederman.github.io/michael-kehoe.com/about">
+                        About
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="q" value="site:https://sarahbethfederman.github.io/michael-kehoe.com">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:https://sarahbethfederman.github.io/michael-kehoe.com">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog">
+                            <h3>
+                                
+                                    <i class="fa fa-newspaper-o">&nbsp;</i>
+                                
+                                Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/recommended">
+                            <h3>
+                                
+                                Recommended
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/publications">
+                            <h3>
+                                
+                                Publications
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/about">
+                            <h3>
+                                
+                                About
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/"><p>Command of the Day 1: compgen</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/"><p>Command of the Day</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&text=Keeping%20a%20NTP%20server%20secure&via=matrixtek" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by mkehoe&body=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/">Keeping a NTP server secure</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+            
+        
+
+        <time class="published"
+            datetime='2016-12-23'>
+            December 23, 2016</time>
+        <span class="author">mkehoe</span>
+        
+            <p>2 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&text=Keeping%20a%20NTP%20server%20secure&via=matrixtek" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f&title=Keeping%20a%20NTP%20server%20secure" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by mkehoe&body=https%3a%2f%2fsarahbethfederman.github.io%2fmichael-kehoe.com%2fblog%2fkeeping-a-ntp-server-secure%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    <div id="content">
+        
+
+<h3 id="introduction">Introduction</h3>
+
+<p>Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.</p>
+
+<p>Generally speaking, the cause of these attacks is due to NTP mis-configuration.</p>
+
+<p>This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.</p>
+
+<h3 id="assumptions">Assumptions</h3>
+
+<p>1. You are not exposing this server to the public internet</p>
+
+<p>2. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network</p>
+
+<p>3. If you <strong>really</strong> need very accurate time, do not run NTP servers on Virtual Machines or Containers.</p>
+
+<p>4. You are running a firewall that blocks packets that come from outside the network on UDP port 123</p>
+
+<h3 id="installation">Installation</h3>
+
+<p>Debian based systems:</p>
+
+<p><code>apt-get install ntp</code></p>
+
+<p>Linux based systems:</p>
+
+<p><code>yum install ntp</code></p>
+
+<h3 id="configuration">Configuration</h3>
+
+<p>This is an example configuration for a Linux Server with upstream time servers and NTP clients connecting to the server from the 192.168.1.0/24 network.</p>
+
+<p>iptables rules:</p>
+
+<p><code>-A INPUT -s 0/0 -s 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT</code></p>
+
+<p><code>-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT</code></p>
+
+<h3 id="automation">Automation</h3>
+
+<p>I strongly suggest you use some type of configuration management system to manage NTP configuration over a fleet of systems.</p>
+
+<p>I recommend:</p>
+
+<ul>
+<li>Puppet - <a href="https://github.com/puppetlabs/puppetlabs-ntp">puppetlabs-ntp</a></li>
+</ul>
+
+<h3 id="references">References</h3>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse">https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns">https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns</a></li>
+<li><a href="https://github.com/puppetlabs/puppetlabs-ntp/">https://github.com/puppetlabs/puppetlabs-ntp/</a></li>
+<li><a href="http://www.team-cymru.org/secure-ntp-template.html">http://www.team-cymru.org/secure-ntp-template.html</a></li>
+<li><a href="http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/">http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/</a></li>
+<li><a href="http://doc.ntp.org/4.1.1/accopt.htm">http://doc.ntp.org/4.1.1/accopt.htm</a></li>
+<li><a href="http://doc.ntp.org/4.1.1/miscopt.htm">http://doc.ntp.org/4.1.1/miscopt.htm</a></li>
+</ul>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/ntp'>ntp</a></li>
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux'>linux</a></li>
+    
+        <li><a href='https://sarahbethfederman.github.io/michael-kehoe.com/categories/security'>security</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/"
+                class="button big previous">Hello World (Again)</a></li>
+    
+
+    
+        <li><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/"
+                class="button big next">2017 Devops Conferences</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'michael-kehoe';
+    var disqus_identifier = 'https:\/\/sarahbethfederman.github.io\/michael-kehoe.com\/blog\/keeping-a-ntp-server-secure\/';
+    var disqus_title = 'Keeping a NTP server secure';
+    var disqus_url = 'https:\/\/sarahbethfederman.github.io\/michael-kehoe.com\/blog\/keeping-a-ntp-server-secure\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <img src="https://sarahbethfederman.github.io/michael-kehoe.com/img/main/logo.jpg" class="intro-circle" width="150" alt="Picture of Michael Kehoe" />
+                
+            
+            
+                <header>
+                    <h2>Michael Kehoe</h2>
+                    <p>Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/michael-kehoe" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/michaelkkehoe" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+<li><a href="//slideshare.com/michaelkehoe3" target="_blank" title="SlideShare" class="fa fa-slideshare"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matrixtek" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/">Command of the Day 1: compgen</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-01-02'>
+                                    January 2, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/">Command of the Day</a></h3>
+                                
+                                    
+                                
+                                <time class="published" datetime=
+                                    '2017-01-02'>
+                                    January 2, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/">linux</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/command-of-the-day/">command-of-the-day</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/conferences/">conferences</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/ntp/">ntp</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/security/">security</a>
+                                <span style="float:right;">1</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/michael-kehoe" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/michaelkkehoe" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+<li><a href="//slideshare.com/michaelkehoe3" target="_blank" title="SlideShare" class="fa fa-slideshare"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matrixtek" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; Michael Kehoe. Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>. Ported by <a href="//github.com/jpescador" target="_blank">Julio Pescador</a>. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+            </div>
+        <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+        
+
+        
+        
+            
+        
+
+        
+        
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/jquery.min.js"></script>
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/skel.min.js"></script>
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/util.js"></script>
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/main.js"></script>
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/backToTop.js"></script>
+            <script src="https://sarahbethfederman.github.io/michael-kehoe.com/js/highlight.pack.js"></script>
+        
+
+        
+
+            
+            <script>hljs.initHighlightingOnLoad();</script>
+            
+    </body>
+</html>
+

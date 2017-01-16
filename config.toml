@@ -9,32 +9,32 @@ publishdir = "docs"
 theme = "hugo-future-imperfect"
 title = "Michael Kehoe"
 [[menu.main]]
-name = "Publications"
-url = "/publications"
-weight = 3
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
+identifier = "fa fa-newspaper-o"
+name = "Blog"
+url = "/blog"
+weight = 1
 [[menu.main]]
 name = "Recommended"
 url = "/recommended"
 weight = 2
 [[menu.main]]
-identifier = "fa fa-newspaper-o"
-name = "Blog"
-url = "/blog"
-weight = 1
+name = "About"
+url = "/about"
+weight = 4
+[[menu.main]]
+name = "Publications"
+url = "/publications"
+weight = 3
 [params]
-categoriesByCount = true
+categoriesbycount = true
 description = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
-faviconVersion = ""
-includeReadingTime = true
-loadFavicon = true
-navbarTitle = "Michael Kehoe"
-socialAppearAtBottom = true
-socialAppearAtTop = true
-viewMorePostLink = "blog/"
+faviconversion = ""
+includereadingtime = true
+loadfavicon = true
+navbartitle = "Michael Kehoe"
+socialappearatbottom = true
+socialappearattop = false
+viewmorepostlink = "blog/"
 [params.intro]
 header = "Michael Kehoe"
 paragraph = "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"

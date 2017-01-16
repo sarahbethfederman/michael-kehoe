@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</loc>
+    <lastmod>2017-01-02T23:43:22-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</loc>
+    <lastmod>2017-01-02T23:39:19-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</loc>
+    <lastmod>2016-12-26T18:44:44-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</loc>
+    <lastmod>2016-12-24T15:39:30-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/recommended/</loc>
+    <lastmod>2016-12-23T13:26:22-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</loc>
+    <lastmod>2016-12-23T11:19:32-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</loc>
+    <lastmod>2016-11-01T12:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/about/</loc>
+    <lastmod>2016-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/</loc>
+    <lastmod>2017-01-02T23:43:22-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/</loc>
+    <lastmod>2017-01-02T23:43:22-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/command-of-the-day/</loc>
+    <lastmod>2017-01-02T23:43:22-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/conferences/</loc>
+    <lastmod>2016-12-26T18:44:44-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/</loc>
+    <lastmod>2017-01-02T23:43:22-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/ntp/</loc>
+    <lastmod>2016-12-23T11:19:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/security/</loc>
+    <lastmod>2016-12-23T11:19:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

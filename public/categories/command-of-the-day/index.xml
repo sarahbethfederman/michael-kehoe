@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>command-of-the-day on Michael Kehoe</title>
+    <link>https://sarahbethfederman.github.io/michael-kehoe.com/categories/command-of-the-day/index.xml</link>
+    <description>Recent content in command-of-the-day on Michael Kehoe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/command-of-the-day/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Command of the Day 1: compgen</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</link>
+      <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</guid>
+      <description>
+
+&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
+
+&lt;p&gt;Show all available commands, aliases and functions&lt;/p&gt;
+
+&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
+
+&lt;p&gt;compgen &lt;a href=&#34;1&#34;&gt;builtins&lt;/a&gt; - bash built-in commands, see bash(1)&lt;/p&gt;
+
+&lt;h3 id=&#34;help&#34;&gt;help&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;compgen: usage: compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
+
+&lt;p&gt;man 1 bash&lt;/p&gt;
+
+&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
+
+&lt;p&gt;How are we going to create a list of commands for ‘Command of the Day’? Compgen!&lt;/p&gt;
+
+&lt;p&gt;compgen&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;-a: List of user aliases&lt;/li&gt;
+&lt;li&gt;-b: List of built-in shell commands&lt;/li&gt;
+&lt;li&gt;-c: List of all commands you can run&lt;/li&gt;
+&lt;li&gt;-e: List of shell variables&lt;/li&gt;
+&lt;li&gt;-k: List of built-in shell keywords&lt;/li&gt;
+&lt;li&gt;-A function: List of available bash functions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;tip&#34;&gt;Tip&lt;/h1&gt;
+
+&lt;p&gt;Create an alias for compgen to show all functions: alias compgen=‘compgen -abckA function’. This will print in list format including all aliases, built-ins, commands and functions available&lt;/p&gt;
+
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&#34;&gt;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&#34;&gt;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Command of the Day</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</link>
+      <pubDate>Mon, 02 Jan 2017 23:39:19 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</guid>
+      <description>&lt;p&gt;There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.&lt;/p&gt;
+
+&lt;p&gt;I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
