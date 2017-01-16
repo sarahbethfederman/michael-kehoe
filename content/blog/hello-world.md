@@ -3,7 +3,6 @@ author = "mkehoe"
 categories = []
 date = "2016-11-01T12:00:00+00:00"
 description = ""
-draft = false
 featured = ""
 featuredalt = ""
 featuredpath = ""
@@ -14,4 +13,4 @@ type = "post"
 +++
 Hi everyone,
 
-I'm kick-starting another effort to regularly blog and update my site. A big thank you to [Sarah Federman](http://sarah.codes/) who put this site together. She's awesome and open to hire/freelance.
+I'm kick-starting another effort to regularly blog and update my site. A big thank you to [Sarah Federman](http://sarah.codes/) who put this site together. She's awesome and open to hire in SF.
