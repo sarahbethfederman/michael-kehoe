@@ -3,7 +3,6 @@ author = ""
 categories = ["conferences"]
 date = "2016-12-26T18:44:44-08:00"
 description = ""
-draft = false
 featured = ""
 featuredalt = ""
 featuredpath = ""

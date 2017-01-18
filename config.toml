@@ -26,15 +26,15 @@ name = "Publications"
 url = "/publications"
 weight = 3
 [params]
-categoriesByCount = true
+categoriesbycount = true
 description = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
 faviconversion = ""
-includeReadingTime = true
-loadFavicon = true
-navbarTitle = "Michael Kehoe"
-socialAppearAtBottom = true
-socialAppearAtTop = false
-viewMorePostLink = "blog/"
+includereadingtime = true
+loadfavicon = true
+navbartitle = "Michael Kehoe"
+socialappearatbottom = true
+socialappearattop = false
+viewmorepostlink = "blog/"
 [params.intro]
 header = "Michael Kehoe"
 paragraph = "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"
@@ -44,7 +44,7 @@ circle = true
 imperfect = false
 src = "/img/main/logo.jpg"
 width = "150"
-[params.postAmount]
+[params.postamount]
 sidebar = 2
 [social]
 behance = ""

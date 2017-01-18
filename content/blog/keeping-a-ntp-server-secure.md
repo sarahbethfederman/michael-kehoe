@@ -3,7 +3,6 @@ author = "mkehoe"
 categories = ["ntp", "linux", "security"]
 date = "2016-12-23T11:19:32-08:00"
 description = ""
-draft = false
 featured = ""
 featuredalt = ""
 featuredpath = ""
