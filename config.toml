@@ -9,6 +9,14 @@ publishdir = "docs"
 theme = "hugo-future-imperfect"
 title = "Michael Kehoe"
 [[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+[[menu.main]]
+name = "Publications"
+url = "/publications"
+weight = 2
+[[menu.main]]
 identifier = "fa fa-newspaper-o"
 name = "Blog"
 url = "/blog"
@@ -16,15 +24,7 @@ weight = 1
 [[menu.main]]
 name = "Recommended"
 url = "/recommended"
-weight = 2
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
-[[menu.main]]
-name = "Publications"
-url = "/publications"
-weight = 3
+weight = 0
 [params]
 categoriesbycount = true
 description = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
