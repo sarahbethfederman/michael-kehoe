@@ -33,7 +33,7 @@ includereadingtime = true
 loadfavicon = true
 navbartitle = "Michael Kehoe"
 socialappearatbottom = true
-socialappearattop = false
+socialappearattop = true
 viewmorepostlink = "blog/"
 [params.intro]
 header = "Michael Kehoe"
