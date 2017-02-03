@@ -17,6 +17,10 @@ Conferences
 2017
 ----
 
+### APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale
+
+* Coming Soon
+
 ### SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
 
 * Coming Soon
