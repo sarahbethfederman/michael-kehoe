@@ -3,7 +3,6 @@ author = ""
 categories = []
 date = "2017-02-05T11:49:39-08:00"
 description = ""
-draft = true
 featured = ""
 featuredalt = ""
 featuredpath = ""
