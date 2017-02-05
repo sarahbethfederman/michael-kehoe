@@ -9,6 +9,42 @@
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Command of the Day 2: time</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</link>
+      <pubDate>Sun, 05 Feb 2017 12:31:44 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</guid>
+      <description>
+
+&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
+
+&lt;p&gt;Prints the time it took to execute a command&lt;/p&gt;
+
+&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
+
+&lt;p&gt;time(1) - time command execution&lt;/p&gt;
+
+&lt;h3 id=&#34;help&#34;&gt;—help&lt;/h3&gt;
+
+&lt;p&gt;None&lt;/p&gt;
+
+&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
+
+&lt;p&gt;man 1 time&lt;/p&gt;
+
+&lt;p&gt;Usage&lt;/p&gt;
+
+&lt;p&gt;=====&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;time executable - Time the execution of the program executable&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;time -p executable - Time the execution of the program executable and print in POSIX.2 format&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Command of the Day 1: compgen</title>
       <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</link>
       <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
