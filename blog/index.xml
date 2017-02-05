@@ -6,8 +6,53 @@
     <description>Recent content in Blogs on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Jan 2017 23:43:22 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 05 Feb 2017 11:49:39 -0800</lastBuildDate>
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Reminders about using traceroute in multi-path networks</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/reminders-about-using-traceroute-in-multi-path-networks/</link>
+      <pubDate>Sun, 05 Feb 2017 11:49:39 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/reminders-about-using-traceroute-in-multi-path-networks/</guid>
+      <description>
+
+&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
+
+&lt;p&gt;First off, I would like to give a plug for &lt;a href=&#34;https://www.nanog.org/meetings/nanog45/presentations/Sunday/RAS_traceroute_N45.pdf&#34;&gt;this&lt;/a&gt; presentation about how to use/ interpret traceroute.&lt;/p&gt;
+
+&lt;p&gt;Traceroute was written before the times of MPLS, ECMP and Clos network designs. Since the rise of those technologies/ topologies, the way that engineers troubleshoot latency/ packet-loss hasn’t really evolved.&lt;/p&gt;
+
+&lt;p&gt;If you look at companies like Google/ Facebook/ LinkedIn, they all run Clos topologies within their production datacenters. So what does mean to engineers troubleshooting production issues?&lt;/p&gt;
+
+&lt;p&gt;Firstly, the number of paths from &lt;em&gt;Host A&lt;/em&gt; to &lt;em&gt;Host B&lt;/em&gt; is usually going to be &amp;gt; 1. This means &lt;a href=&#34;https://en.wikipedia.org/wiki/MTR_(software)&#34;&gt;MTR&lt;/a&gt; (and some default uses of &lt;a href=&#34;https://en.wikipedia.org/wiki/Traceroute&#34;&gt;traceroute&lt;/a&gt; are largely obselete.&lt;/p&gt;
+
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+
+&lt;p&gt;Systems engineer A complains about higher latency from his application (spread across the datacenter) to the Oracle database that his application uses. Systems engineer B also complains that his (different) application is seeing higher latency to a different Oracle database (which are located in the same segment of the network).&lt;/p&gt;
+
+&lt;p&gt;The go-to troubleshooting step here is to ask the DBA to verify if they are seeing higher execution times on the database which correlates in the percieved rise in latency. In this case, the DBA says there is no issue.&lt;/p&gt;
+
+&lt;p&gt;The systems engineers then go to the network engineers and ask for help diagnosing the issue, confident that it isn’t an application-level issue. The network engineers ask for a traceroute and an &lt;a href=&#34;https://en.wikipedia.org/wiki/MTR_(software)&#34;&gt;mtr&lt;/a&gt; print-out. This would be perfect in an older-style network topology, but is not good for Clos style networks. In this particular case, there is ~20 distinct paths between &lt;em&gt;Host A&lt;/em&gt; (application) and *Host B *(database). In a best case scenario, traceroute might show you 2-3 paths (by default), mtr will only show you one (the first one it discovers). The chances of you finding the bad path is unlikely.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-to-do-next&#34;&gt;What to do next?&lt;/h3&gt;
+
+&lt;p&gt;Linux traceroute (with a few arguments) can actually help you here. traceroute allows you to send multiple queries to help discover all the interfaces you’d be routed through and potentially see interfaces with packet-loss or higher latency.&lt;/p&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[root@hostA ~]$ traceroute -q 10 hostB&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;This may not discover all paths, but it is a start. Ofcourse you can run it multiple times to build a bigger picture of the network topology.&lt;/p&gt;
+
+&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Facebook wrote &lt;a href=&#34;https://code.facebook.com/posts/1534350660228025/netnorad-troubleshooting-networks-via-end-to-end-probing/&#34;&gt;this&lt;/a&gt; great article on troubleshooting networks and released &lt;a href=&#34;https://github.com/facebook/fbtracert&#34;&gt;fbtracert&lt;/a&gt; which is designed to fix this exact problem.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://paris-traceroute.net/&#34;&gt;Paris Traceroute&lt;/a&gt; is another open-source tool aiming to address this space. I haven’t used it, so I cannot vouch for its usefulness.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Command of the Day 1: compgen</title>
