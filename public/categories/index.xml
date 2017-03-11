@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael Kehoe</title>
+    <link>https://sarahbethfederman.github.io/michael-kehoe.com/categories/index.xml</link>
+    <description>Recent content on Michael Kehoe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Publications</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</link>
+      <pubDate>Sat, 24 Dec 2016 15:39:30 -0800</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</guid>
+      <description>
+
+&lt;h1 id=&#34;conferences&#34;&gt;Conferences&lt;/h1&gt;
+
+&lt;h2 id=&#34;2017&#34;&gt;2017&lt;/h2&gt;
+
+&lt;h3 id=&#34;apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale&#34;&gt;APRICOT 2017: Trafficshifting: Avoiding Disasters &amp;amp; Improving Performance at Scale&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=gfrpAIuTnoc&amp;amp;t=9s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;srecon17-americas-reducing-mttr-and-false-escalations-event-correlation-at-linkedin&#34;&gt;SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Coming Soon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;srecon17-americas-trafficshift-avoiding-disasters-at-scale&#34;&gt;SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Coming Soon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2016&#34;&gt;2016&lt;/h2&gt;
+
+&lt;h3 id=&#34;couchbase-connect-2016-going-all-in-from-single-use-case-to-many&#34;&gt;Couchbase Connect 2016: Going all In: From single use-case to many&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-68421388&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=1shb4UZON_I&amp;amp;t=3s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin&#34;&gt;Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=Dv6SWGfRWn0&amp;amp;t=30s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;saltconf16-using-saltstack-to-auto-triage-and-remediate-production-systems&#34;&gt;SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/michael-kehoe-61165500&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=4LapQ9Zhr_E&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;srecon16-americas-college-student-to-sre-onboarding-your-entry-level-talent&#34;&gt;SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=TYX5ihgIL7s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;h2 id=&#34;2015&#34;&gt;2015&lt;/h2&gt;
+
+&lt;h3 id=&#34;couchbase-connect-2015-couchbase-at-linkedin-2015&#34;&gt;Couchbase Connect 2015: Couchbase at LinkedIn 2015&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/9quM4qNUXJ0KO5&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=TmjY1HJemi4&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;strata-hadoop-world-2015-couchbase-kafka-hadoop-at-linkedin&#34;&gt;Strata + Hadoop World 2015: Couchbase, Kafka &amp;amp; Hadoop at LinkedIn&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;h2 id=&#34;2014&#34;&gt;2014&lt;/h2&gt;
+
+&lt;h3 id=&#34;couchbase-connect-2014-using-couchbase&#34;&gt;Couchbase Connect 2014: Using Couchbase&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=J9PTmSwZE-8&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;=&lt;/p&gt;
+
+&lt;h1 id=&#34;talks&#34;&gt;Talks&lt;/h1&gt;
+
+&lt;h2 id=&#34;2016-1&#34;&gt;2016&lt;/h2&gt;
+
+&lt;h3 id=&#34;couchbase-silicon-valley-meetup-janurary-linkedin-s-big-data-pipeline-with-kafka-hadoop-and-couchbase&#34;&gt;Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-meetup-jan-2016&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;southbay-sre-meetup-jan-2016-linkedin-traffic-shifting&#34;&gt;SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;-&lt;/p&gt;
+
+&lt;p&gt;=&lt;/p&gt;
+
+&lt;h1 id=&#34;articles&#34;&gt;Articles&lt;/h1&gt;
+
+&lt;h2 id=&#34;2016-2&#34;&gt;2016&lt;/h2&gt;
+
+&lt;h3 id=&#34;linkedin-engineering-blog-getting-to-know-michael-kehoe&#34;&gt;LinkedIn Engineering Blog: Getting to know Michael Kehoe&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://engineering.linkedin.com/blog/2016/02/getting-to-know-michael-kehoe&#34;&gt;LinkedIn Engineering Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
