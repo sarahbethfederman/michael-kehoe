@@ -6,8 +6,27 @@
     <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Feb 2017 12:31:44 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Mar 2017 10:38:40 +0000</lastBuildDate>
     <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Publication Updates (March 11 2017)</title>
+      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/publication-updates-march-11-2017/</link>
+      <pubDate>Sat, 11 Mar 2017 10:38:40 +0000</pubDate>
+      
+      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/publication-updates-march-11-2017/</guid>
+      <description>&lt;p&gt;Hi all,&lt;/p&gt;
+
+&lt;p&gt;I just updated my &lt;a href=&#34;http://michael-kehoe.com/publications/&#34;&gt;publications&lt;/a&gt; page with my APRICOT presentation from earlier in the month.&lt;/p&gt;
+
+&lt;p&gt;If you’re coming to &lt;a href=&#34;https://www.usenix.org/conference/srecon17americas&#34;&gt;SRECon Americas 2017&lt;/a&gt; this coming week, come and check out my presentations:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Traffic shift: Avoiding disasters at scale&lt;/li&gt;
+&lt;li&gt;Reducing MTTR and false escalations: Event Correlation at LinkedIn&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Command of the Day 2: time</title>
