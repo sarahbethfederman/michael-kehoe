@@ -1,6 +1,6 @@
 +++
 author = ""
-categories = []
+categories = ""
 date = "2016-12-24T15:39:30-08:00"
 description = ""
 featured = ""
@@ -19,7 +19,10 @@ Conferences
 
 ### APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale
 
-* Coming Soon
+### 
+
+* Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406)
+* Video: [YouTube](https://www.youtube.com/watch?v=gfrpAIuTnoc&t=9s)
 
 ### SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
 
@@ -28,7 +31,6 @@ Conferences
 ### SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale
 
 * Coming Soon
-
 
 
 2016
@@ -54,6 +56,9 @@ Conferences
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent)
 * Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
+-
+
+-
 
 2015
 ----
@@ -67,6 +72,9 @@ Conferences
 
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611)
 
+-
+
+-
 
 2014
 ----
@@ -76,7 +84,9 @@ Conferences
 * Presentation: [SlideShare](http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014)
 * Video: [YouTube](https://www.youtube.com/watch?v=J9PTmSwZE-8)
 
+-
 
+=
 
 Talks
 =====
@@ -92,7 +102,9 @@ Talks
 
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016)
 
+-
 
+=
 
 Articles
 ========
