@@ -6,7 +6,7 @@ languageCode = "en-us"
 paginate = 5
 preserveTaxonomyNames = true
 publishdir = "docs"
-theme = "hugo-future-imperfect"
+theme = "casper"
 title = "Michael Kehoe"
 [[menu.main]]
 name = "About"
