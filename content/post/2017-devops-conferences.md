@@ -1,16 +1,16 @@
 +++
 author = ""
-categories = ["conferences"]
 date = "2016-12-26T18:44:44-08:00"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
+draft = false
 title = "2017 Devops Conferences"
-type = "post"
-
+slug = "2017-devops-conferences"
+tags = ["conferences"]
+image = "img/main/logo.jpg"
+comments = true     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
+menu = ""           # set "main" to add this content to the main menu
 +++
+
 Hat-tip to Sarah Drasner who came up with a [list](https://css-tricks.com/guide-2017-conferences/) of 2017 Front-end conferences that inspired this list.
 
 If I have missed any, please tweet me at [@matrixtek](https://twitter.com/matrixtek) and I’ll review it being added to the list.

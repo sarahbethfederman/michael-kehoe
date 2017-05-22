@@ -1,17 +1,15 @@
 +++
-author = "mkehoe"
-categories = ["linux", "iptables", " networking", " security"]
+author = ""
 date = "2016-11-04T15:00:00+00:00"
-description = "A guide to implement iptables for linux"
-draft = true
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
+draft = false
 title = "Complete guide to iptables implementation"
-type = "post"
-
+slug = "complete-guide-to-iptables-implementation"
+tags = ["linux", "iptables", " networking", " security"]
+comments = true     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
+menu = ""           # set "main" to add this content to the main menu
 +++
+
 I've been wanting to put this article together for some time, a complete guide to implementing iptables on a Linux Server.
 
 Firstly, my assumptions:

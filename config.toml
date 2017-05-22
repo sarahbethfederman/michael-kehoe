@@ -1,77 +1,62 @@
-baseurl = "https://sarahbethfederman.github.io/michael-kehoe.com"
-canonifyUrls = true
-disqusShortname = "michael-kehoe"
-googleAnalytics = "UA-2048391-12"
-languageCode = "en-us"
+BaseUrl= "https://michael-kehoe.io/"
+LanguageCode= "en-us"
+Title= "Michael Kehoe"
 paginate = 5
-preserveTaxonomyNames = true
-publishdir = "docs"
-theme = "casper"
-title = "Michael Kehoe"
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
-[[menu.main]]
-name = "Publications"
-url = "/publications"
-weight = 1
-[[menu.main]]
-identifier = "fa fa-newspaper-o"
-name = "Blog"
-url = "/blog"
-weight = 0
-[[menu.main]]
-name = "Recommended"
-url = "/recommended"
-weight = 2
+DisqusShortname = "michael-kehoe"
+Copyright = "All rights reserved - 2017"
+canonifyurls = true
+
 [params]
-categoriesbycount = true
-description = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
-faviconversion = ""
-includereadingtime = true
-loadfavicon = true
-navbartitle = "Michael Kehoe"
-socialappearatbottom = true
-socialappearattop = true
-viewmorepostlink = "blog/"
-[params.intro]
-header = "Michael Kehoe"
-paragraph = "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"
-[params.intro.pic]
-alt = "Picture of Michael Kehoe"
-circle = true
-imperfect = false
-src = "/img/main/logo.jpg"
-width = "150"
-[params.postamount]
-sidebar = 2
-[social]
-behance = ""
-bitbucket = ""
-codepen = ""
-deviantart = ""
-dribbble = ""
-email = ""
-facebook = ""
-facebook_admin = ""
-flickr = ""
-foursquare = ""
-github = "michael-kehoe"
-googleplus = ""
-instagram = ""
-jsfiddle = ""
-linkedin = "michaelkkehoe"
-medium = ""
-pinterest = ""
-reddit = ""
-slideshare = "michaelkehoe3"
-stackoverflow = ""
-tumblr = ""
-twitter = "matrixtek"
-twitter_domain = ""
-vimeo = ""
-vine = ""
-wordpress = ""
-xing = ""
-youtube = ""
+  description = "Site Reliability Engineer"
+  metadescription = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
+  cover = "img/main/cover.jpg"
+  author = "Michael Kehoe"
+  authorlocation = "San Francisco, CA"
+  authorwebsite = "https://michael-kehoe.io/"
+  bio= "Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn"
+  # logo = "img/main/logo.jpg"
+  googleAnalyticsUserID = "UA-2048391-12"
+  # Optional RSS-Link, if not provided it defaults to the standard index.xml
+  # RSSLink = "http://feeds.feedburner.com/..."
+  githubName = "michael-kehoe"
+  twitterName = "matrixtek"
+  # facebookName = ""
+  # linkedinName = ""
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = true
+  
+  # Setting a value will load highlight.js and enable syntax highlighting using the style selected.
+  # See https://github.com/isagalaev/highlight.js/tree/master/src/styles for available styles
+  # A preview of above styles can be viewed at https://highlightjs.org/static/demo/
+  hjsStyle = "default"
+
+  [params.social]
+    twitter = "matrixtek"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 3
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "Publications"
+  weight = 2
+  identifier = "publications"
+  url = "/publications"
+
+[[menu.main]]
+  name = "Recommended"
+  weight = 1
+  identifier = "recommended"
+  url = "/recommended"
+
+[[menu.main]]
+  name = "About"
+  weight = 0
+  identifier = "about"
+  url = "/about"
+
+
+
+

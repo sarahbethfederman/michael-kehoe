@@ -1,15 +1,14 @@
 +++
 author = ""
-categories = ["command-of-the-day", "linux"]
 date = "2017-01-02T23:43:22-08:00"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
+draft = false
 title = "Command of the Day 1: compgen"
-type = "post"
-
+slug = "command-of-the-day-1-compgen"
+tags = ["command-of-the-day", "linux"]
+image = "img/main/logo.jpg"
+comments = true     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
+menu = ""           # set "main" to add this content to the main menu
 +++
 ### Simple explanation
 
