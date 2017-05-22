@@ -1,181 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on Michael Kehoe</title>
-    <link>https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml</link>
-    <description>Recent content in linux on Michael Kehoe</description>
+    <title>Linux on Michael Kehoe</title>
+    <link>https://michael-kehoe.io/categories/linux/</link>
+    <description>Recent content in Linux on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Fri, 23 Dec 2016 11:19:32 -0800</lastBuildDate>
     
-    <item>
-      <title>Command of the Day 2: time</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</link>
-      <pubDate>Sun, 05 Feb 2017 12:31:44 -0800</pubDate>
-      
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
-
-&lt;p&gt;Prints the time it took to execute a command&lt;/p&gt;
-
-&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
-
-&lt;p&gt;time(1) - time command execution&lt;/p&gt;
-
-&lt;h3 id=&#34;help&#34;&gt;—help&lt;/h3&gt;
-
-&lt;p&gt;None&lt;/p&gt;
-
-&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
-
-&lt;p&gt;man 1 time&lt;/p&gt;
-
-&lt;p&gt;Usage&lt;/p&gt;
-
-&lt;p&gt;=====&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;time executable - Time the execution of the program executable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;time -p executable - Time the execution of the program executable and print in POSIX.2 format&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
+	<atom:link href="https://michael-kehoe.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Command of the Day 1: compgen</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</link>
-      <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
-      
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
-
-&lt;p&gt;Show all available commands, aliases and functions&lt;/p&gt;
-
-&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
-
-&lt;p&gt;compgen &lt;a href=&#34;1&#34;&gt;builtins&lt;/a&gt; - bash built-in commands, see bash(1)&lt;/p&gt;
-
-&lt;h3 id=&#34;help&#34;&gt;help&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;compgen: usage: compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
-
-&lt;p&gt;man 1 bash&lt;/p&gt;
-
-&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
-
-&lt;p&gt;How are we going to create a list of commands for ‘Command of the Day’? Compgen!&lt;/p&gt;
-
-&lt;p&gt;compgen&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;-a: List of user aliases&lt;/li&gt;
-&lt;li&gt;-b: List of built-in shell commands&lt;/li&gt;
-&lt;li&gt;-c: List of all commands you can run&lt;/li&gt;
-&lt;li&gt;-e: List of shell variables&lt;/li&gt;
-&lt;li&gt;-k: List of built-in shell keywords&lt;/li&gt;
-&lt;li&gt;-A function: List of available bash functions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;tip&#34;&gt;Tip&lt;/h1&gt;
-
-&lt;p&gt;Create an alias for compgen to show all functions: alias compgen=‘compgen -abckA function’. This will print in list format including all aliases, built-ins, commands and functions available&lt;/p&gt;
-
-&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&#34;&gt;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&#34;&gt;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Command of the Day</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</link>
-      <pubDate>Mon, 02 Jan 2017 23:39:19 -0800</pubDate>
-      
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</guid>
-      <description>&lt;p&gt;There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.&lt;/p&gt;
-
-&lt;p&gt;I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.&lt;/p&gt;
-</description>
-    </item>
     
     <item>
       <title>Keeping a NTP server secure</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</link>
+      <link>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</link>
       <pubDate>Fri, 23 Dec 2016 11:19:32 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</guid>
-      <description>
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.&lt;/p&gt;
-
-&lt;p&gt;Generally speaking, the cause of these attacks is due to NTP mis-configuration.&lt;/p&gt;
-
-&lt;p&gt;This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.&lt;/p&gt;
-
-&lt;h3 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h3&gt;
-
-&lt;p&gt;1. You are not exposing this server to the public internet&lt;/p&gt;
-
-&lt;p&gt;2. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network&lt;/p&gt;
-
-&lt;p&gt;3. If you &lt;strong&gt;really&lt;/strong&gt; need very accurate time, do not run NTP servers on Virtual Machines or Containers.&lt;/p&gt;
-
-&lt;p&gt;4. You are running a firewall that blocks packets that come from outside the network on UDP port 123&lt;/p&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;p&gt;Debian based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;apt-get install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Linux based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;yum install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;configuration&#34;&gt;Configuration&lt;/h3&gt;
-
-&lt;p&gt;This is an example configuration for a Linux Server with upstream time servers and NTP clients connecting to the server from the 192.168.1.0/24 network.&lt;/p&gt;
-
-&lt;p&gt;iptables rules:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;-A INPUT -s 0/0 -s 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;automation&#34;&gt;Automation&lt;/h3&gt;
-
-&lt;p&gt;I strongly suggest you use some type of configuration management system to manage NTP configuration over a fleet of systems.&lt;/p&gt;
-
-&lt;p&gt;I recommend:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Puppet - &lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp&#34;&gt;puppetlabs-ntp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse&#34;&gt;https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns&#34;&gt;https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp/&#34;&gt;https://github.com/puppetlabs/puppetlabs-ntp/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.team-cymru.org/secure-ntp-template.html&#34;&gt;http://www.team-cymru.org/secure-ntp-template.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/&#34;&gt;http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://doc.ntp.org/4.1.1/accopt.htm&#34;&gt;http://doc.ntp.org/4.1.1/accopt.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://doc.ntp.org/4.1.1/miscopt.htm&#34;&gt;http://doc.ntp.org/4.1.1/miscopt.htm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</guid>
+      <description>Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet
+2. You are running several NTP servers within your network to keep it highly-available.</description>
     </item>
     
   </channel>

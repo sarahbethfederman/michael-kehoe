@@ -5,6 +5,7 @@ paginate = 5
 DisqusShortname = "michael-kehoe"
 Copyright = "All rights reserved - 2017"
 canonifyurls = true
+theme = "casper"
 
 [params]
   description = "Site Reliability Engineer"

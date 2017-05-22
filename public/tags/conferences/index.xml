@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conferences on Michael Kehoe</title>
+    <link>https://michael-kehoe.io/tags/conferences/</link>
+    <description>Recent content in Conferences on Michael Kehoe</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
+    <lastBuildDate>Mon, 26 Dec 2016 18:44:44 -0800</lastBuildDate>
+    
+	<atom:link href="https://michael-kehoe.io/tags/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2017 Devops Conferences</title>
+      <link>https://michael-kehoe.io/post/2017-devops-conferences/</link>
+      <pubDate>Mon, 26 Dec 2016 18:44:44 -0800</pubDate>
+      
+      <guid>https://michael-kehoe.io/post/2017-devops-conferences/</guid>
+      <description> Hat-tip to Sarah Drasner who came up with a list of 2017 Front-end conferences that inspired this list.
+If I have missed any, please tweet me at @matrixtek and I’ll review it being added to the list.
+Note: There is a larger list over here that lists a number of the smaller conferences
+January  None listed  February  Devops Days Charlotte  March  Devops Days Baltimore Devops Days Vancouver Elasticon 2017 SRECon17 Americas Strata + Hadoop World 2017  April  Devops Days Atlanta Devops Days Seattle  May  ApacheCon Devops Days Austin Devops Days Salt Lake City Devops Days Toronto Devops Days Zurich Monitorama PyCon17 US SRECon17 Asia/ Australia  June  Devops Days Amsterdam Velocity San Jose  July  Devops Days Minneapolis GopherCon  August  SRECon17 Europe/ Middle East/ Africa  September  Devops Days Detroit  October  LISA17 Velocity London Velocity New York  November  None listed  December  None listed  No Date Listed  SaltConf Couchbase Connect 17  </description>
+    </item>
+    
+  </channel>
+</rss>

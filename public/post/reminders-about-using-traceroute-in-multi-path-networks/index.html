@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="Reminders about using traceroute in multi-path networks"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@matrixtek"/>
+
+
+
+  	<meta property="og:title" content="Reminders about using traceroute in multi-path networks &middot; Michael Kehoe" />
+  	<meta property="og:site_name" content="Michael Kehoe" />
+  	<meta property="og:url" content="https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/" />
+
+    
+        
+            <meta property="og:image" content="/img/main/cover.jpg"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2017-02-05T11:49:39-08:00" />
+
+    
+    
+
+    <title>Reminders about using traceroute in multi-path networks &middot; Michael Kehoe</title>
+
+    
+    <meta name="description" content="Introduction First off, I would like to give a plug for this presentation about how to use/ interpret traceroute.
+Traceroute was written before the times of MPL" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://michael-kehoe.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://michael-kehoe.io/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://michael-kehoe.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://michael-kehoe.io/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+      
+          <link href="https://michael-kehoe.io/index.xml" rel="alternate" type="application/rss+xml" title="Michael Kehoe" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.20.7" />
+
+    <link rel="canonical" href="https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": 
+    },
+    "author": {
+        "@type": "Person",
+        "name": ,
+        
+        "url": https://michael-kehoe.io/,
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn
+        
+    },
+    "headline": Reminders about using traceroute in multi-path networks,
+    "name": Reminders about using traceroute in multi-path networks,
+    "wordCount": 416,
+    "timeRequired": "PT2M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": en
+    },
+    "url": https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/,
+    "datePublished": 2017-02-05T11:49Z,
+    "dateModified": 2017-02-05T11:49Z,
+    
+    
+    "description": ,
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2048391-12', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://michael-kehoe.io/">Blog</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://michael-kehoe.io/publications">Publications</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://michael-kehoe.io/recommended">Recommended</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://michael-kehoe.io/about">About</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://michael-kehoe.io/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">Reminders about using traceroute in multi-path networks</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2017-02-05T11:49:39-08:00">
+            Feb 5, 2017
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      
+
+<h3 id="introduction">Introduction</h3>
+
+<p>First off, I would like to give a plug for <a href="https://www.nanog.org/meetings/nanog45/presentations/Sunday/RAS_traceroute_N45.pdf">this</a> presentation about how to use/ interpret traceroute.</p>
+
+<p>Traceroute was written before the times of MPLS, ECMP and Clos network designs. Since the rise of those technologies/ topologies, the way that engineers troubleshoot latency/ packet-loss hasn’t really evolved.</p>
+
+<p>If you look at companies like Google/ Facebook/ LinkedIn, they all run Clos topologies within their production datacenters. So what does mean to engineers troubleshooting production issues?</p>
+
+<p>Firstly, the number of paths from <em>Host A</em> to <em>Host B</em> is usually going to be &gt; 1. This means <a href="https://en.wikipedia.org/wiki/MTR_(software)">MTR</a> (and some default uses of <a href="https://en.wikipedia.org/wiki/Traceroute">traceroute</a> are largely obselete.</p>
+
+<h3 id="example">Example</h3>
+
+<p>Systems engineer A complains about higher latency from his application (spread across the datacenter) to the Oracle database that his application uses. Systems engineer B also complains that his (different) application is seeing higher latency to a different Oracle database (which are located in the same segment of the network).</p>
+
+<p>The go-to troubleshooting step here is to ask the DBA to verify if they are seeing higher execution times on the database which correlates in the percieved rise in latency. In this case, the DBA says there is no issue.</p>
+
+<p>The systems engineers then go to the network engineers and ask for help diagnosing the issue, confident that it isn’t an application-level issue. The network engineers ask for a traceroute and an <a href="https://en.wikipedia.org/wiki/MTR_(software)">mtr</a> print-out. This would be perfect in an older-style network topology, but is not good for Clos style networks. In this particular case, there is ~20 distinct paths between <em>Host A</em> (application) and *Host B *(database). In a best case scenario, traceroute might show you 2-3 paths (by default), mtr will only show you one (the first one it discovers). The chances of you finding the bad path is unlikely.</p>
+
+<h3 id="what-to-do-next">What to do next?</h3>
+
+<p>Linux traceroute (with a few arguments) can actually help you here. traceroute allows you to send multiple queries to help discover all the interfaces you’d be routed through and potentially see interfaces with packet-loss or higher latency.</p>
+
+<p>e.g.</p>
+
+<p><code>[root@hostA ~]$ traceroute -q 10 hostB</code></p>
+
+<p>This may not discover all paths, but it is a start. Ofcourse you can run it multiple times to build a bigger picture of the network topology.</p>
+
+<h3 id="tools">Tools</h3>
+
+<ul>
+<li>Facebook wrote <a href="https://code.facebook.com/posts/1534350660228025/netnorad-troubleshooting-networks-via-end-to-end-probing/">this</a> great article on troubleshooting networks and released <a href="https://github.com/facebook/fbtracert">fbtracert</a> which is designed to fix this exact problem.</li>
+<li><a href="https://paris-traceroute.net/">Paris Traceroute</a> is another open-source tool aiming to address this space. I haven’t used it, so I cannot vouch for its usefulness.</li>
+</ul>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="https://michael-kehoe.io/">Michael Kehoe</a></h4>
+  
+  <p>Site Reliability Engineer creating reliable infrastructure at scale at LinkedIn</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">San Francisco, CA</span>
+    <span class="author-link icon-link"><a href="https://michael-kehoe.io/">https://michael-kehoe.io/</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=Reminders%20about%20using%20traceroute%20in%20multi-path%20networks&nbsp;-&nbsp;Michael%20Kehoe&amp;url=https%3a%2f%2fmichael-kehoe.io%2fpost%2freminders-about-using-traceroute-in-multi-path-networks%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fmichael-kehoe.io%2fpost%2freminders-about-using-traceroute-in-multi-path-networks%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2fmichael-kehoe.io%2fpost%2freminders-about-using-traceroute-in-multi-path-networks%2f&amp;description=Reminders%20about%20using%20traceroute%20in%20multi-path%20networks"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2fmichael-kehoe.io%2fpost%2freminders-about-using-traceroute-in-multi-path-networks%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'michael-kehoe';
+  var disqus_url = 'https:\/\/michael-kehoe.io\/post\/reminders-about-using-traceroute-in-multi-path-networks\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+      <a class="read-next-story" style="no-cover" href="https://michael-kehoe.io/post/command-of-the-day-2-time/">
+          <section class="post">
+              <h2>Command of the Day 2: time</h2>
+              
+          </section>
+      </a>
+  
+  
+      <a class="read-next-story prev" style="background-image: url(/img/main/logo.jpg)" href="https://michael-kehoe.io/post/command-of-the-day-1-compgen/">
+          <section class="post">
+              <h2>Command of the Day 1: compgen</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Michael Kehoe</a> All rights reserved - 2017</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://michael-kehoe.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://michael-kehoe.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://michael-kehoe.io/js/index.js"></script>
+    
+</body>
+</html>
+

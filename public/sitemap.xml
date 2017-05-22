@@ -2,116 +2,152 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/publication-updates-march-11-2017/</loc>
+    <loc>https://michael-kehoe.io/post/publication-updates-march-11-2017/</loc>
     <lastmod>2017-03-11T10:38:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</loc>
+    <loc>https://michael-kehoe.io/post/command-of-the-day-2-time/</loc>
     <lastmod>2017-02-05T12:31:44-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/reminders-about-using-traceroute-in-multi-path-networks/</loc>
+    <loc>https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/</loc>
     <lastmod>2017-02-05T11:49:39-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</loc>
+    <loc>https://michael-kehoe.io/post/command-of-the-day-1-compgen/</loc>
     <lastmod>2017-01-02T23:43:22-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</loc>
+    <loc>https://michael-kehoe.io/post/command-of-the-day/</loc>
     <lastmod>2017-01-02T23:39:19-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</loc>
+    <loc>https://michael-kehoe.io/post/2017-devops-conferences/</loc>
     <lastmod>2016-12-26T18:44:44-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</loc>
+    <loc>https://michael-kehoe.io/publications/</loc>
     <lastmod>2016-12-24T15:39:30-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/recommended/</loc>
+    <loc>https://michael-kehoe.io/recommended/</loc>
     <lastmod>2016-12-23T13:26:22-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</loc>
+    <loc>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</loc>
     <lastmod>2016-12-23T11:19:32-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</loc>
+    <loc>https://michael-kehoe.io/post/complete-guide-to-iptables-implementation/</loc>
+    <lastmod>2016-11-04T15:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/post/hello-world-again/</loc>
     <lastmod>2016-11-01T12:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/about/</loc>
+    <loc>https://michael-kehoe.io/about/</loc>
     <lastmod>2016-10-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/</loc>
+    <loc>https://michael-kehoe.io/categories/</loc>
     <lastmod>2016-12-24T15:39:30-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/blog/</loc>
-    <lastmod>2017-03-11T10:38:40+00:00</lastmod>
+    <loc>https://michael-kehoe.io/categories/</loc>
+    <lastmod>2016-12-24T15:39:30-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/</loc>
-    <lastmod>2017-03-11T10:38:40+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/command-of-the-day/</loc>
+    <loc>https://michael-kehoe.io/tags/command-of-the-day/</loc>
     <lastmod>2017-02-05T12:31:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/conferences/</loc>
+    <loc>https://michael-kehoe.io/tags/conferences/</loc>
     <lastmod>2016-12-26T18:44:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/linux/</loc>
+    <loc>https://michael-kehoe.io/tags/iptables/</loc>
+    <lastmod>2016-11-04T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/tags/linux/</loc>
     <lastmod>2017-02-05T12:31:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/ntp/</loc>
+    <loc>https://michael-kehoe.io/categories/linux/</loc>
     <lastmod>2016-12-23T11:19:32-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/publications/</loc>
+    <loc>https://michael-kehoe.io/</loc>
     <lastmod>2017-03-11T10:38:40+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://sarahbethfederman.github.io/michael-kehoe.com/categories/security/</loc>
+    <loc>https://michael-kehoe.io/tags/networking/</loc>
+    <lastmod>2016-11-04T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/categories/ntp/</loc>
     <lastmod>2016-12-23T11:19:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/post/</loc>
+    <lastmod>2017-03-11T10:38:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/categories/publications/</loc>
+    <lastmod>2017-03-11T10:38:40+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/tags/security/</loc>
+    <lastmod>2016-11-04T15:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/categories/security/</loc>
+    <lastmod>2016-12-23T11:19:32-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://michael-kehoe.io/tags/</loc>
+    <lastmod>2017-02-05T12:31:44-08:00</lastmod>
     <priority>0</priority>
   </url>
   

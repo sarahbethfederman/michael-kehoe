@@ -2,553 +2,155 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Michael Kehoe</title>
-    <link>https://sarahbethfederman.github.io/michael-kehoe.com/index.xml</link>
+    <link>https://michael-kehoe.io/</link>
     <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Sat, 11 Mar 2017 10:38:40 +0000</lastBuildDate>
-    <atom:link href="https://sarahbethfederman.github.io/michael-kehoe.com/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://michael-kehoe.io/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Publication Updates (March 11 2017)</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/publication-updates-march-11-2017/</link>
+      <link>https://michael-kehoe.io/post/publication-updates-march-11-2017/</link>
       <pubDate>Sat, 11 Mar 2017 10:38:40 +0000</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/publication-updates-march-11-2017/</guid>
-      <description>&lt;p&gt;Hi all,&lt;/p&gt;
-
-&lt;p&gt;I just updated my &lt;a href=&#34;http://michael-kehoe.com/publications/&#34;&gt;publications&lt;/a&gt; page with my APRICOT presentation from earlier in the month.&lt;/p&gt;
-
-&lt;p&gt;If you’re coming to &lt;a href=&#34;https://www.usenix.org/conference/srecon17americas&#34;&gt;SRECon Americas 2017&lt;/a&gt; this coming week, come and check out my presentations:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Traffic shift: Avoiding disasters at scale&lt;/li&gt;
-&lt;li&gt;Reducing MTTR and false escalations: Event Correlation at LinkedIn&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/publication-updates-march-11-2017/</guid>
+      <description>Hi all,
+I just updated my publications page with my APRICOT presentation from earlier in the month.
+If you’re coming to SRECon Americas 2017 this coming week, come and check out my presentations:
+ Traffic shift: Avoiding disasters at scale Reducing MTTR and false escalations: Event Correlation at LinkedIn  </description>
     </item>
     
     <item>
       <title>Command of the Day 2: time</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</link>
+      <link>https://michael-kehoe.io/post/command-of-the-day-2-time/</link>
       <pubDate>Sun, 05 Feb 2017 12:31:44 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-2-time/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
-
-&lt;p&gt;Prints the time it took to execute a command&lt;/p&gt;
-
-&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
-
-&lt;p&gt;time(1) - time command execution&lt;/p&gt;
-
-&lt;h3 id=&#34;help&#34;&gt;—help&lt;/h3&gt;
-
-&lt;p&gt;None&lt;/p&gt;
-
-&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
-
-&lt;p&gt;man 1 time&lt;/p&gt;
-
-&lt;p&gt;Usage&lt;/p&gt;
-
-&lt;p&gt;=====&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;time executable - Time the execution of the program executable&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;time -p executable - Time the execution of the program executable and print in POSIX.2 format&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/command-of-the-day-2-time/</guid>
+      <description> Simple explanation Prints the time it took to execute a command
+whatis time(1) - time command execution
+—help None
+man man 1 time
+Usage
+=====
+ time executable - Time the execution of the program executable
+ time -p executable - Time the execution of the program executable and print in POSIX.2 format
+  </description>
     </item>
     
     <item>
       <title>Reminders about using traceroute in multi-path networks</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/reminders-about-using-traceroute-in-multi-path-networks/</link>
+      <link>https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/</link>
       <pubDate>Sun, 05 Feb 2017 11:49:39 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/reminders-about-using-traceroute-in-multi-path-networks/</guid>
-      <description>
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;First off, I would like to give a plug for &lt;a href=&#34;https://www.nanog.org/meetings/nanog45/presentations/Sunday/RAS_traceroute_N45.pdf&#34;&gt;this&lt;/a&gt; presentation about how to use/ interpret traceroute.&lt;/p&gt;
-
-&lt;p&gt;Traceroute was written before the times of MPLS, ECMP and Clos network designs. Since the rise of those technologies/ topologies, the way that engineers troubleshoot latency/ packet-loss hasn’t really evolved.&lt;/p&gt;
-
-&lt;p&gt;If you look at companies like Google/ Facebook/ LinkedIn, they all run Clos topologies within their production datacenters. So what does mean to engineers troubleshooting production issues?&lt;/p&gt;
-
-&lt;p&gt;Firstly, the number of paths from &lt;em&gt;Host A&lt;/em&gt; to &lt;em&gt;Host B&lt;/em&gt; is usually going to be &amp;gt; 1. This means &lt;a href=&#34;https://en.wikipedia.org/wiki/MTR_(software)&#34;&gt;MTR&lt;/a&gt; (and some default uses of &lt;a href=&#34;https://en.wikipedia.org/wiki/Traceroute&#34;&gt;traceroute&lt;/a&gt; are largely obselete.&lt;/p&gt;
-
-&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
-
-&lt;p&gt;Systems engineer A complains about higher latency from his application (spread across the datacenter) to the Oracle database that his application uses. Systems engineer B also complains that his (different) application is seeing higher latency to a different Oracle database (which are located in the same segment of the network).&lt;/p&gt;
-
-&lt;p&gt;The go-to troubleshooting step here is to ask the DBA to verify if they are seeing higher execution times on the database which correlates in the percieved rise in latency. In this case, the DBA says there is no issue.&lt;/p&gt;
-
-&lt;p&gt;The systems engineers then go to the network engineers and ask for help diagnosing the issue, confident that it isn’t an application-level issue. The network engineers ask for a traceroute and an &lt;a href=&#34;https://en.wikipedia.org/wiki/MTR_(software)&#34;&gt;mtr&lt;/a&gt; print-out. This would be perfect in an older-style network topology, but is not good for Clos style networks. In this particular case, there is ~20 distinct paths between &lt;em&gt;Host A&lt;/em&gt; (application) and *Host B *(database). In a best case scenario, traceroute might show you 2-3 paths (by default), mtr will only show you one (the first one it discovers). The chances of you finding the bad path is unlikely.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-to-do-next&#34;&gt;What to do next?&lt;/h3&gt;
-
-&lt;p&gt;Linux traceroute (with a few arguments) can actually help you here. traceroute allows you to send multiple queries to help discover all the interfaces you’d be routed through and potentially see interfaces with packet-loss or higher latency.&lt;/p&gt;
-
-&lt;p&gt;e.g.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;[root@hostA ~]$ traceroute -q 10 hostB&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;This may not discover all paths, but it is a start. Ofcourse you can run it multiple times to build a bigger picture of the network topology.&lt;/p&gt;
-
-&lt;h3 id=&#34;tools&#34;&gt;Tools&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Facebook wrote &lt;a href=&#34;https://code.facebook.com/posts/1534350660228025/netnorad-troubleshooting-networks-via-end-to-end-probing/&#34;&gt;this&lt;/a&gt; great article on troubleshooting networks and released &lt;a href=&#34;https://github.com/facebook/fbtracert&#34;&gt;fbtracert&lt;/a&gt; which is designed to fix this exact problem.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://paris-traceroute.net/&#34;&gt;Paris Traceroute&lt;/a&gt; is another open-source tool aiming to address this space. I haven’t used it, so I cannot vouch for its usefulness.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/reminders-about-using-traceroute-in-multi-path-networks/</guid>
+      <description>Introduction First off, I would like to give a plug for this presentation about how to use/ interpret traceroute.
+Traceroute was written before the times of MPLS, ECMP and Clos network designs. Since the rise of those technologies/ topologies, the way that engineers troubleshoot latency/ packet-loss hasn’t really evolved.
+If you look at companies like Google/ Facebook/ LinkedIn, they all run Clos topologies within their production datacenters. So what does mean to engineers troubleshooting production issues?</description>
     </item>
     
     <item>
       <title>Command of the Day 1: compgen</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</link>
+      <link>https://michael-kehoe.io/post/command-of-the-day-1-compgen/</link>
       <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day-1-compgen/</guid>
-      <description>
-
-&lt;h3 id=&#34;simple-explanation&#34;&gt;Simple explanation&lt;/h3&gt;
-
-&lt;p&gt;Show all available commands, aliases and functions&lt;/p&gt;
-
-&lt;h3 id=&#34;whatis&#34;&gt;whatis&lt;/h3&gt;
-
-&lt;p&gt;compgen &lt;a href=&#34;1&#34;&gt;builtins&lt;/a&gt; - bash built-in commands, see bash(1)&lt;/p&gt;
-
-&lt;h3 id=&#34;help&#34;&gt;help&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;compgen: usage: compgen [-abcdefgjksuv] [-o option]  [-A action] [-G globpat] [-W wordlist]  [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;man&#34;&gt;man&lt;/h3&gt;
-
-&lt;p&gt;man 1 bash&lt;/p&gt;
-
-&lt;h1 id=&#34;usage&#34;&gt;Usage&lt;/h1&gt;
-
-&lt;p&gt;How are we going to create a list of commands for ‘Command of the Day’? Compgen!&lt;/p&gt;
-
-&lt;p&gt;compgen&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;-a: List of user aliases&lt;/li&gt;
-&lt;li&gt;-b: List of built-in shell commands&lt;/li&gt;
-&lt;li&gt;-c: List of all commands you can run&lt;/li&gt;
-&lt;li&gt;-e: List of shell variables&lt;/li&gt;
-&lt;li&gt;-k: List of built-in shell keywords&lt;/li&gt;
-&lt;li&gt;-A function: List of available bash functions&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;tip&#34;&gt;Tip&lt;/h1&gt;
-
-&lt;p&gt;Create an alias for compgen to show all functions: alias compgen=‘compgen -abckA function’. This will print in list format including all aliases, built-ins, commands and functions available&lt;/p&gt;
-
-&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&#34;&gt;https://www.cyberciti.biz/open-source/command-line-hacks/compgen-linux-command/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&#34;&gt;http://unix.stackexchange.com/questions/151118/understand-compgen-builtin-command&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/command-of-the-day-1-compgen/</guid>
+      <description>Simple explanation Show all available commands, aliases and functions
+whatis compgen builtins - bash built-in commands, see bash(1)
+help compgen: usage: compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist] [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​
+man man 1 bash
+Usage How are we going to create a list of commands for ‘Command of the Day’? Compgen!
+compgen
+ -a: List of user aliases -b: List of built-in shell commands -c: List of all commands you can run -e: List of shell variables -k: List of built-in shell keywords -A function: List of available bash functions  Tip Create an alias for compgen to show all functions: alias compgen=‘compgen -abckA function’.</description>
     </item>
     
     <item>
       <title>Command of the Day</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</link>
+      <link>https://michael-kehoe.io/post/command-of-the-day/</link>
       <pubDate>Mon, 02 Jan 2017 23:39:19 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/command-of-the-day/</guid>
-      <description>&lt;p&gt;There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.&lt;/p&gt;
-
-&lt;p&gt;I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.&lt;/p&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/command-of-the-day/</guid>
+      <description>There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.
+I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.</description>
     </item>
     
     <item>
       <title>2017 Devops Conferences</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</link>
+      <link>https://michael-kehoe.io/post/2017-devops-conferences/</link>
       <pubDate>Mon, 26 Dec 2016 18:44:44 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/2017-devops-conferences/</guid>
-      <description>
-
-&lt;p&gt;Hat-tip to Sarah Drasner who came up with a &lt;a href=&#34;https://css-tricks.com/guide-2017-conferences/&#34;&gt;list&lt;/a&gt; of 2017 Front-end conferences that inspired this list.&lt;/p&gt;
-
-&lt;p&gt;If I have missed any, please tweet me at &lt;a href=&#34;https://twitter.com/matrixtek&#34;&gt;@matrixtek&lt;/a&gt; and I’ll review it being added to the list.&lt;/p&gt;
-
-&lt;p&gt;Note: There is a larger list over &lt;a href=&#34;http://devopsconferences.org/&#34;&gt;here&lt;/a&gt; that lists a number of the smaller conferences&lt;/p&gt;
-
-&lt;h3 id=&#34;january&#34;&gt;January&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;None listed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;february&#34;&gt;February&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-charlotte/welcome/&#34;&gt;Devops Days Charlotte&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;march&#34;&gt;March&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-baltimore/welcome/&#34;&gt;Devops Days Baltimore&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-vancouver/welcome/&#34;&gt;Devops Days Vancouver&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Elasticon 2017&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.usenix.org/conference/srecon17americas&#34;&gt;SRECon17 Americas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/strata/strata-ca&#34;&gt;Strata + Hadoop World 2017&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;april&#34;&gt;April&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-atlanta/welcome/&#34;&gt;Devops Days Atlanta&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-seattle/welcome/&#34;&gt;Devops Days Seattle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;may&#34;&gt;May&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://apachecon.com/&#34;&gt;ApacheCon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-austin/welcome/&#34;&gt;Devops Days Austin&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-salt-lake-city/welcome/&#34;&gt;Devops Days Salt Lake City&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-toronto/welcome/&#34;&gt;Devops Days Toronto&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-zurich/welcome/&#34;&gt;Devops Days Zurich&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://monitorama.com/&#34;&gt;Monitorama&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://us.pycon.org/2017/&#34;&gt;PyCon17 US&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.usenix.org/conference/srecon17asia&#34;&gt;SRECon17 Asia/ Australia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;june&#34;&gt;June&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-amsterdam/welcome/&#34;&gt;Devops Days Amsterdam&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Velocity San Jose&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;july&#34;&gt;July&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-minneapolis/welcome/&#34;&gt;Devops Days Minneapolis&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gophercon.com/&#34;&gt;GopherCon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;august&#34;&gt;August&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;SRECon17 Europe/ Middle East/ Africa&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;september&#34;&gt;September&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.devopsdays.org/events/2017-detroit/welcome/&#34;&gt;Devops Days Detroit&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;october&#34;&gt;October&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;LISA17&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/velocity&#34;&gt;Velocity London&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://conferences.oreilly.com/velocity&#34;&gt;Velocity New York&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;november&#34;&gt;November&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;None listed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;december&#34;&gt;December&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;None listed&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;no-date-listed&#34;&gt;No Date Listed&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://saltconf.com/&#34;&gt;SaltConf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Couchbase Connect 17&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/2017-devops-conferences/</guid>
+      <description> Hat-tip to Sarah Drasner who came up with a list of 2017 Front-end conferences that inspired this list.
+If I have missed any, please tweet me at @matrixtek and I’ll review it being added to the list.
+Note: There is a larger list over here that lists a number of the smaller conferences
+January  None listed  February  Devops Days Charlotte  March  Devops Days Baltimore Devops Days Vancouver Elasticon 2017 SRECon17 Americas Strata + Hadoop World 2017  April  Devops Days Atlanta Devops Days Seattle  May  ApacheCon Devops Days Austin Devops Days Salt Lake City Devops Days Toronto Devops Days Zurich Monitorama PyCon17 US SRECon17 Asia/ Australia  June  Devops Days Amsterdam Velocity San Jose  July  Devops Days Minneapolis GopherCon  August  SRECon17 Europe/ Middle East/ Africa  September  Devops Days Detroit  October  LISA17 Velocity London Velocity New York  November  None listed  December  None listed  No Date Listed  SaltConf Couchbase Connect 17  </description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</link>
+      <link>https://michael-kehoe.io/publications/</link>
       <pubDate>Sat, 24 Dec 2016 15:39:30 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/publications/</guid>
-      <description>
-
-&lt;h1 id=&#34;conferences&#34;&gt;Conferences&lt;/h1&gt;
-
-&lt;h2 id=&#34;2017&#34;&gt;2017&lt;/h2&gt;
-
-&lt;h3 id=&#34;apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale&#34;&gt;APRICOT 2017: Trafficshifting: Avoiding Disasters &amp;amp; Improving Performance at Scale&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=gfrpAIuTnoc&amp;amp;t=9s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;srecon17-americas-reducing-mttr-and-false-escalations-event-correlation-at-linkedin&#34;&gt;SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Coming Soon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;srecon17-americas-trafficshift-avoiding-disasters-at-scale&#34;&gt;SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Coming Soon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;2016&#34;&gt;2016&lt;/h2&gt;
-
-&lt;h3 id=&#34;couchbase-connect-2016-going-all-in-from-single-use-case-to-many&#34;&gt;Couchbase Connect 2016: Going all In: From single use-case to many&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-68421388&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=1shb4UZON_I&amp;amp;t=3s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin&#34;&gt;Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-monitoring-production-deployments-the-tools-linkedin&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=Dv6SWGfRWn0&amp;amp;t=30s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;saltconf16-using-saltstack-to-auto-triage-and-remediate-production-systems&#34;&gt;SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/michael-kehoe-61165500&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=4LapQ9Zhr_E&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;srecon16-americas-college-student-to-sre-onboarding-your-entry-level-talent&#34;&gt;SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=TYX5ihgIL7s&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;h2 id=&#34;2015&#34;&gt;2015&lt;/h2&gt;
-
-&lt;h3 id=&#34;couchbase-connect-2015-couchbase-at-linkedin-2015&#34;&gt;Couchbase Connect 2015: Couchbase at LinkedIn 2015&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/9quM4qNUXJ0KO5&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=TmjY1HJemi4&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;strata-hadoop-world-2015-couchbase-kafka-hadoop-at-linkedin&#34;&gt;Strata + Hadoop World 2015: Couchbase, Kafka &amp;amp; Hadoop at LinkedIn&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;h2 id=&#34;2014&#34;&gt;2014&lt;/h2&gt;
-
-&lt;h3 id=&#34;couchbase-connect-2014-using-couchbase&#34;&gt;Couchbase Connect 2014: Using Couchbase&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Video: &lt;a href=&#34;https://www.youtube.com/watch?v=J9PTmSwZE-8&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;p&gt;=&lt;/p&gt;
-
-&lt;h1 id=&#34;talks&#34;&gt;Talks&lt;/h1&gt;
-
-&lt;h2 id=&#34;2016-1&#34;&gt;2016&lt;/h2&gt;
-
-&lt;h3 id=&#34;couchbase-silicon-valley-meetup-janurary-linkedin-s-big-data-pipeline-with-kafka-hadoop-and-couchbase&#34;&gt;Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/couchbase-meetup-jan-2016&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;southbay-sre-meetup-jan-2016-linkedin-traffic-shifting&#34;&gt;SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Presentation: &lt;a href=&#34;http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016&#34;&gt;SlideShare&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;-&lt;/p&gt;
-
-&lt;p&gt;=&lt;/p&gt;
-
-&lt;h1 id=&#34;articles&#34;&gt;Articles&lt;/h1&gt;
-
-&lt;h2 id=&#34;2016-2&#34;&gt;2016&lt;/h2&gt;
-
-&lt;h3 id=&#34;linkedin-engineering-blog-getting-to-know-michael-kehoe&#34;&gt;LinkedIn Engineering Blog: Getting to know Michael Kehoe&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://engineering.linkedin.com/blog/2016/02/getting-to-know-michael-kehoe&#34;&gt;LinkedIn Engineering Blog&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/publications/</guid>
+      <description>Conferences 2017 APRICOT 2017: Trafficshifting: Avoiding Disasters &amp;amp; Improving Performance at Scale  Presentation: SlideShare Video: YouTube  SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn  Coming Soon  SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale  Coming Soon  2016 Couchbase Connect 2016: Going all In: From single use-case to many  Presentation: SlideShare Video: YouTube  Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn  Presentation: SlideShare Video: YouTube  SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems  Presentation: SlideShare Video: YouTube  SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent  Presentation: SlideShare Video: YouTube  -</description>
     </item>
     
     <item>
       <title>Recommended</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/recommended/</link>
+      <link>https://michael-kehoe.io/recommended/</link>
       <pubDate>Fri, 23 Dec 2016 13:26:22 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/recommended/</guid>
-      <description>
-
-&lt;p&gt;Updated: 1st January 2017&lt;/p&gt;
-
-&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://https://feedly.com/&#34;&gt;Feedly&lt;/a&gt; - Online web-based RSS Reader&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://limechat.net/mac/&#34;&gt;LimeChat&lt;/a&gt; - IRC application for Mac&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://itunes.apple.com/us/app/quiver-programmers-notebook/id866773894?mt=12&#34;&gt;Quiver&lt;/a&gt; - Text Editor&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://slack.com/&#34;&gt;Slack&lt;/a&gt; - Team-based instant-messaging&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;people-linkedin-pages&#34;&gt;People (LinkedIn pages)&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/purgason/&#34;&gt;Benjamin Purgason&lt;/a&gt; - Sr SRE Manager @ LinkedIn&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/riw777/&#34;&gt;Russ White&lt;/a&gt; - Network Architect @ LinkedIn&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;twitter&#34;&gt;Twitter&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/SwiftOnSecurity&#34;&gt;@SwiftOnSecurity&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://twitter.com/sarah_federman&#34;&gt;@sarah_federman&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;blogs&#34;&gt;Blogs&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://highscalability.com/&#34;&gt;High Scalability&lt;/a&gt; - Great learning place for systems design and architecture&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.cyberciti.biz/&#34;&gt;nixCraft&lt;/a&gt; - Linux Tips, Hacks, Tutorials&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/recommended/</guid>
+      <description> Updated: 1st January 2017
+Software  Feedly - Online web-based RSS Reader LimeChat - IRC application for Mac Quiver - Text Editor Slack - Team-based instant-messaging  People (LinkedIn pages)  Benjamin Purgason - Sr SRE Manager @ LinkedIn Russ White - Network Architect @ LinkedIn  Twitter  @SwiftOnSecurity @sarah_federman  Blogs  High Scalability - Great learning place for systems design and architecture nixCraft - Linux Tips, Hacks, Tutorials  </description>
     </item>
     
     <item>
       <title>Keeping a NTP server secure</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</link>
+      <link>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</link>
       <pubDate>Fri, 23 Dec 2016 11:19:32 -0800</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/keeping-a-ntp-server-secure/</guid>
-      <description>
-
-&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;
-
-&lt;p&gt;Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.&lt;/p&gt;
-
-&lt;p&gt;Generally speaking, the cause of these attacks is due to NTP mis-configuration.&lt;/p&gt;
-
-&lt;p&gt;This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.&lt;/p&gt;
-
-&lt;h3 id=&#34;assumptions&#34;&gt;Assumptions&lt;/h3&gt;
-
-&lt;p&gt;1. You are not exposing this server to the public internet&lt;/p&gt;
-
-&lt;p&gt;2. You are running several NTP servers within your network to keep it highly-available. Tip: Using Anycast is a good way to create a highly-available set of NTP servers for a larger-sized network&lt;/p&gt;
-
-&lt;p&gt;3. If you &lt;strong&gt;really&lt;/strong&gt; need very accurate time, do not run NTP servers on Virtual Machines or Containers.&lt;/p&gt;
-
-&lt;p&gt;4. You are running a firewall that blocks packets that come from outside the network on UDP port 123&lt;/p&gt;
-
-&lt;h3 id=&#34;installation&#34;&gt;Installation&lt;/h3&gt;
-
-&lt;p&gt;Debian based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;apt-get install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Linux based systems:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;yum install ntp&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;configuration&#34;&gt;Configuration&lt;/h3&gt;
-
-&lt;p&gt;This is an example configuration for a Linux Server with upstream time servers and NTP clients connecting to the server from the 192.168.1.0/24 network.&lt;/p&gt;
-
-&lt;p&gt;iptables rules:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;-A INPUT -s 0/0 -s 0/0 -p udp --source-port 123:123 -m state --state ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;-A OUTPUT -s 0/0 -s 0/0 -p udp --destination-port 123:123 -m state --state NEW,ESTABLISHED -j ACCEPT&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;automation&#34;&gt;Automation&lt;/h3&gt;
-
-&lt;p&gt;I strongly suggest you use some type of configuration management system to manage NTP configuration over a fleet of systems.&lt;/p&gt;
-
-&lt;p&gt;I recommend:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Puppet - &lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp&#34;&gt;puppetlabs-ntp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;references&#34;&gt;References&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse&#34;&gt;https://en.wikipedia.org/wiki/NTP_server_misuse_and_abuse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns&#34;&gt;https://en.wikipedia.org/wiki/Network_Time_Protocol#Security_concerns&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/puppetlabs/puppetlabs-ntp/&#34;&gt;https://github.com/puppetlabs/puppetlabs-ntp/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.team-cymru.org/secure-ntp-template.html&#34;&gt;http://www.team-cymru.org/secure-ntp-template.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/&#34;&gt;http://www.thegeekstuff.com/2014/06/linux-ntp-server-client/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://doc.ntp.org/4.1.1/accopt.htm&#34;&gt;http://doc.ntp.org/4.1.1/accopt.htm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://doc.ntp.org/4.1.1/miscopt.htm&#34;&gt;http://doc.ntp.org/4.1.1/miscopt.htm&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</guid>
+      <description>Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
+Generally speaking, the cause of these attacks is due to NTP mis-configuration.
+This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.
+Assumptions 1. You are not exposing this server to the public internet
+2. You are running several NTP servers within your network to keep it highly-available.</description>
+    </item>
+    
+    <item>
+      <title>Complete guide to iptables implementation</title>
+      <link>https://michael-kehoe.io/post/complete-guide-to-iptables-implementation/</link>
+      <pubDate>Fri, 04 Nov 2016 15:00:00 +0000</pubDate>
+      
+      <guid>https://michael-kehoe.io/post/complete-guide-to-iptables-implementation/</guid>
+      <description>I&amp;rsquo;ve been wanting to put this article together for some time, a complete guide to implementing iptables on a Linux Server.
+Firstly, my assumptions: * You have a reasonable grasp of Linux and Iptables * You want to use Iptables to secure a Linux server
+The Basics Iptables has by default three chains for the FILTER table: * INPUT * OUTPUT * FORWARD
+In this case, we&amp;rsquo;re going to focus on the INPUT chain (Incoming to firewall.</description>
     </item>
     
     <item>
       <title>Hello World (Again)</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</link>
+      <link>https://michael-kehoe.io/post/hello-world-again/</link>
       <pubDate>Tue, 01 Nov 2016 12:00:00 +0000</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/blog/hello-world/</guid>
-      <description>&lt;p&gt;Hi everyone,&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m kick-starting another effort to regularly blog and update my site. A big thank you to &lt;a href=&#34;http://sarah.codes/&#34;&gt;Sarah Federman&lt;/a&gt; who put this site together. She&amp;rsquo;s awesome and open to hire in SF.&lt;/p&gt;
-</description>
+      <guid>https://michael-kehoe.io/post/hello-world-again/</guid>
+      <description>Hi everyone,
+I&amp;rsquo;m kick-starting another effort to regularly blog and update my site. A big thank you to Sarah Federman who put this site together. She&amp;rsquo;s awesome and working on the design system at Adobe.</description>
     </item>
     
     <item>
       <title>About Michael</title>
-      <link>https://sarahbethfederman.github.io/michael-kehoe.com/about/</link>
+      <link>https://michael-kehoe.io/about/</link>
       <pubDate>Sun, 30 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://sarahbethfederman.github.io/michael-kehoe.com/about/</guid>
-      <description>&lt;p&gt;I am an engineer who prides himself on architecting reliable, scalable infrastructure.&lt;/p&gt;
-
-&lt;p&gt;I specialise in maintaining large system infrastructure as demonstrated by work at LinkedIn (applications, automation &amp;amp; infrastructure) and at The University of Queensland (networks). I possess high-level skills in maintaining Linux and Windows servers and their respective infrastructure services. My interpersonal skills allow me to interact with clients and colleagues in a professional manner using exemplary communication skills.&lt;/p&gt;
-
-&lt;p&gt;Previous work experience has included; building small satellites at NASA and writing thermal environments software at Rio Tinto.&lt;/p&gt;
-</description>
+      <guid>https://michael-kehoe.io/about/</guid>
+      <description>I am an engineer who prides himself on architecting reliable, scalable infrastructure.
+I specialise in maintaining large system infrastructure as demonstrated by work at LinkedIn (applications, automation &amp;amp; infrastructure) and at The University of Queensland (networks). I possess high-level skills in maintaining Linux and Windows servers and their respective infrastructure services. My interpersonal skills allow me to interact with clients and colleagues in a professional manner using exemplary communication skills.</description>
     </item>
     
   </channel>
