@@ -84,8 +84,6 @@ Note: I’ve done my best to put the key take-aways into each presenters talk (w
   * Etsy
   * Github
 
-**
-**
 
 **Monitorings things at your day job (Monitoring int he enterprise ) - Bryan Liles**
 
@@ -140,8 +138,6 @@ Note: I’ve done my best to put the key take-aways into each presenters talk (w
   * RED: Rate, error (date), durations (distribution) - Brendan Gregg
   * Four golden signals: (latency, traffic, errs and saturation) - Google
 
-**
-**
 
 **Yo Dawg: Monitoring Monitoring systems at Netflix - Roy Rapoport**
 
