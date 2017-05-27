@@ -1,5 +1,5 @@
 +++
-author = ""
+author = "mkehoe"
 categories = ""
 date = "2016-12-24T15:39:30-08:00"
 description = ""
@@ -9,8 +9,8 @@ featuredpath = "publications"
 linktitle = ""
 title = "Publications"
 type = "page"
-
 +++
+
 Conferences
 ===========
 
@@ -19,16 +19,28 @@ Conferences
 
 ### APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale
 
-### 
-
 * Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406)
 * Video: [YouTube](https://www.youtube.com/watch?v=gfrpAIuTnoc&t=9s)
 
 ### SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
 
-* Coming Soon
+* Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/reducing-mttr-and-false-escalations-event-correlation-at-linkedin-73177586)
+* Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_mttr)
 
 ### SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale
+
+* Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconamericas2017-trafficshift-avoiding-disasters-at-scale)
+* Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_trafficshift)
+
+### Velocity San Jose 2017: Traffic shifts: Avoiding Disasters at Scale
+
+* Coming Soon
+
+### SRECon17 EMEA: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
+
+* Coming Soon
+
+### SRECon17 EMEA: Networks for SRE's: What do I need to know for troubleshooting applications
 
 * Coming Soon
 
@@ -56,9 +68,6 @@ Conferences
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/srecon-usa-2016-growing-your-entry-level-talent)
 * Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
--
-
--
 
 2015
 ----
@@ -72,9 +81,6 @@ Conferences
 
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611)
 
--
-
--
 
 2014
 ----
@@ -84,9 +90,6 @@ Conferences
 * Presentation: [SlideShare](http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014)
 * Video: [YouTube](https://www.youtube.com/watch?v=J9PTmSwZE-8)
 
--
-
-=
 
 Talks
 =====
@@ -102,9 +105,6 @@ Talks
 
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016)
 
--
-
-=
 
 Articles
 ========
@@ -115,3 +115,11 @@ Articles
 ### LinkedIn Engineering Blog: Getting to know Michael Kehoe
 
 * [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2016/02/getting-to-know-michael-kehoe)
+
+2017
+----
+
+### LinkedIn Engineering Blog: TrafficShift: Load Testing at Scale
+
+* [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2017/05/trafficshift--load-testing-at-scale)
+
