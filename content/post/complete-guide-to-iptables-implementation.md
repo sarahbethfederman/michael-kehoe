@@ -5,6 +5,7 @@ draft = false
 title = "Complete guide to iptables implementation"
 slug = "complete-guide-to-iptables-implementation"
 tags = ["linux", "iptables", " networking", " security"]
+image = "img/main/cover2.jpg"
 comments = true     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 menu = ""           # set "main" to add this content to the main menu

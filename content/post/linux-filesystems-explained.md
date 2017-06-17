@@ -1,16 +1,11 @@
 +++
-author = "Michael Kehoe"
-categories = ["linux", "filesystems,"]
+author = "mkehoe"
+tags = ["linux", "filesystems,"]
 date = "2016-10-30T16:53:00+00:00"
 description = ""
 draft = true
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
 title = "Linux Filesystems explained"
-type = "post"
-
+image = "img/main/cover2.jpg"
 +++
 This post is going to focus on the default Linux filesystems and how they operate.
 

@@ -1,15 +1,14 @@
 +++
 author = ""
-categories = []
 date = "2017-02-05T11:49:39-08:00"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
 title = "Reminders about using traceroute in multi-path networks"
-type = "post"
-
+author = "mkehoe"
+tags = []
+image = "img/main/cover2.jpg"
+draft = false
+comments = true     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
+menu = ""           # set "main" to add this content to the main menu
 +++
 ### Introduction
 

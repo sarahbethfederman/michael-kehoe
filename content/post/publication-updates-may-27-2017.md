@@ -2,13 +2,13 @@
 author = "mkehoe"
 categories = ["publications"]
 date = "2017-05-27T17:00:00+00:00"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
 title = "Publication Updates (May 27 2017)"
-
+image = "img/main/cover2.jpg"
+draft = false
+tags = ["updates", "publications", "conferences"]
+comments = true     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
+menu = ""           # set "main" to add this content to the main menu
 +++
 Hi all,
 
