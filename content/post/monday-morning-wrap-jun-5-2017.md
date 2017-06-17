@@ -5,7 +5,6 @@ draft = false
 title = "Michael's Morning Wrap - 5 June 2017"
 slug = "monday-morning-wrap-jun-5-2017"
 tags = ["weekly-wrap"]
-image = "img/main/logo.jpg"
 comments = true     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 menu = ""           # set "main" to add this content to the main menu
