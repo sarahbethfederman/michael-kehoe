@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Michael Kehoe</title>
-    <link>https://michael-kehoe.io/categories/</link>
+    <link>http://michael-kehoe.io/categories/</link>
     <description>Recent content on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Sat, 24 Dec 2016 15:39:30 -0800</lastBuildDate>
     
-	<atom:link href="https://michael-kehoe.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://michael-kehoe.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Publications</title>
-      <link>https://michael-kehoe.io/publications/</link>
+      <link>http://michael-kehoe.io/publications/</link>
       <pubDate>Sat, 24 Dec 2016 15:39:30 -0800</pubDate>
       
-      <guid>https://michael-kehoe.io/publications/</guid>
+      <guid>http://michael-kehoe.io/publications/</guid>
       <description>Conferences 2017 APRICOT 2017: Trafficshifting: Avoiding Disasters &amp;amp; Improving Performance at Scale  Presentation: SlideShare Video: YouTube  SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn  Coming Soon  SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale  Coming Soon  2016 Couchbase Connect 2016: Going all In: From single use-case to many  Presentation: SlideShare Video: YouTube  Couchbase Connect 2016: Monitoring Production Deployments: The Tools - LinkedIn  Presentation: SlideShare Video: YouTube  SaltConf16: Using SaltStack to Auto Triage and Remediate Production Systems  Presentation: SlideShare Video: YouTube  SRECon16 Americas: College Student to SRE: Onboarding your Entry Level Talent  Presentation: SlideShare Video: YouTube  -</description>
     </item>
     

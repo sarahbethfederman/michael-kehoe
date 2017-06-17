@@ -1,11 +1,12 @@
-BaseUrl= "https://michael-kehoe.io/"
+BaseUrl= "http://michael-kehoe.io/"
 LanguageCode= "en-us"
 Title= "Michael Kehoe"
 paginate = 5
 DisqusShortname = "michael-kehoe"
 Copyright = "All rights reserved - 2017"
-canonifyurls = true
+canonifyurls = false
 theme = "casper"
+themesDir = "themes"
 
 [params]
   description = "Site Reliability Engineer"
