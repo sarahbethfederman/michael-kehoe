@@ -11,7 +11,7 @@ themesDir = "themes"
 [params]
   description = "Site Reliability Engineer"
   metadescription = "Blog of Michael Kehoe - Site Reliability Engineer in San Francisco, CA."
-  cover = "img/main/cover.jpg"
+  cover = "img/main/cover2.jpg"
   author = "Michael Kehoe"
   authorlocation = "San Francisco, CA"
   authorwebsite = "https://michael-kehoe.io/"
