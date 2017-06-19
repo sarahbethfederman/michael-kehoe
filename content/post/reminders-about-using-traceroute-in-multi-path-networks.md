@@ -1,5 +1,4 @@
 +++
-author = ""
 date = "2017-02-05T11:49:39-08:00"
 title = "Reminders about using traceroute in multi-path networks"
 author = "mkehoe"
