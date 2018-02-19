@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Command Of The Day on Michael Kehoe</title>
-    <link>https://michael-kehoe.io/tags/command-of-the-day/</link>
+    <link>http://michael-kehoe.io/tags/command-of-the-day/</link>
     <description>Recent content in Command Of The Day on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Sun, 05 Feb 2017 12:31:44 -0800</lastBuildDate>
     
-	<atom:link href="https://michael-kehoe.io/tags/command-of-the-day/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://michael-kehoe.io/tags/command-of-the-day/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Command of the Day 2: time</title>
-      <link>https://michael-kehoe.io/post/command-of-the-day-2-time/</link>
+      <link>http://michael-kehoe.io/post/command-of-the-day-2-time/</link>
       <pubDate>Sun, 05 Feb 2017 12:31:44 -0800</pubDate>
       
-      <guid>https://michael-kehoe.io/post/command-of-the-day-2-time/</guid>
+      <guid>http://michael-kehoe.io/post/command-of-the-day-2-time/</guid>
       <description> Simple explanation Prints the time it took to execute a command
 whatis time(1) - time command execution
 —help None
@@ -31,10 +31,10 @@ Usage
     
     <item>
       <title>Command of the Day 1: compgen</title>
-      <link>https://michael-kehoe.io/post/command-of-the-day-1-compgen/</link>
+      <link>http://michael-kehoe.io/post/command-of-the-day-1-compgen/</link>
       <pubDate>Mon, 02 Jan 2017 23:43:22 -0800</pubDate>
       
-      <guid>https://michael-kehoe.io/post/command-of-the-day-1-compgen/</guid>
+      <guid>http://michael-kehoe.io/post/command-of-the-day-1-compgen/</guid>
       <description>Simple explanation Show all available commands, aliases and functions
 whatis compgen builtins - bash built-in commands, see bash(1)
 help compgen: usage: compgen [-abcdefgjksuv] [-o option] [-A action] [-G globpat] [-W wordlist] [-F function] [-C command] [-X filterpat] [-P prefix] [-S suffix] [word]​
@@ -46,10 +46,10 @@ compgen
     
     <item>
       <title>Command of the Day</title>
-      <link>https://michael-kehoe.io/post/command-of-the-day/</link>
+      <link>http://michael-kehoe.io/post/command-of-the-day/</link>
       <pubDate>Mon, 02 Jan 2017 23:39:19 -0800</pubDate>
       
-      <guid>https://michael-kehoe.io/post/command-of-the-day/</guid>
+      <guid>http://michael-kehoe.io/post/command-of-the-day/</guid>
       <description>There are lots of really interesting commands on Unix/ Linux systems that are either poorly documented or are plainly forgotten about. So in an effort to educate myself and others, I thought I would try and do a command of the day.
 I’ll aim to do 5 posts a week, sometimes I’ll grep a couple of commands in to one post if they’re related.</description>
     </item>

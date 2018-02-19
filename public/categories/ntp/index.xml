@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ntp on Michael Kehoe</title>
-    <link>https://michael-kehoe.io/categories/ntp/</link>
+    <link>http://michael-kehoe.io/categories/ntp/</link>
     <description>Recent content in Ntp on Michael Kehoe</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>All rights reserved - 2017</copyright>
     <lastBuildDate>Fri, 23 Dec 2016 11:19:32 -0800</lastBuildDate>
     
-	<atom:link href="https://michael-kehoe.io/categories/ntp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://michael-kehoe.io/categories/ntp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Keeping a NTP server secure</title>
-      <link>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</link>
+      <link>http://michael-kehoe.io/post/keeping-a-ntp-server-secure/</link>
       <pubDate>Fri, 23 Dec 2016 11:19:32 -0800</pubDate>
       
-      <guid>https://michael-kehoe.io/post/keeping-a-ntp-server-secure/</guid>
+      <guid>http://michael-kehoe.io/post/keeping-a-ntp-server-secure/</guid>
       <description>Introduction Over the years, bad actors have used the Network Time Protocol (NTP) as a successful DDOS attack vector.
 Generally speaking, the cause of these attacks is due to NTP mis-configuration.
 This post will look at how to build and configure an NTP server and provide insight to help keep your NTP server safe.

@@ -2,14 +2,8 @@
 author = "mkehoe"
 categories = ["ntp", "linux", "security"]
 date = "2016-12-23T11:19:32-08:00"
-description = ""
-featured = ""
-featuredalt = ""
-featuredpath = ""
-linktitle = ""
 title = "Keeping a NTP server secure"
-type = "post"
-
+image = "img/main/cover2.jpg"
 +++
 ### Introduction
 

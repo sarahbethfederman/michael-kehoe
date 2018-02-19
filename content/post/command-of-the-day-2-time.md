@@ -5,6 +5,7 @@ draft = false
 title = "Command of the Day 2: time"
 slug = "command-of-the-day-2-time"
 tags = ["command-of-the-day", "linux"]
+image = "img/main/cover2.jpg"
 comments = true     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 menu = ""           # set "main" to add this content to the main menu
