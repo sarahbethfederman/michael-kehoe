@@ -13,6 +13,14 @@ type = "page"
 
 Conferences
 ===========
+2018
+----
+
+### The Road to GOTO Chicago: Chaos Tour
+* [Coming Soon](https://medium.com/russmiles/the-road-to-goto-chicago-chaos-tour-cdff17a97a97)
+
+### Interop ITX 2018: The future of Reliability Engineering
+* [Coming Soon](http://schedule.interop.com/session/the-next-wave-of-reliability-engineering/853923)
 
 2017
 ----
@@ -34,15 +42,17 @@ Conferences
 
 ### Velocity San Jose 2017: Traffic shifts: Avoiding Disasters at Scale
 
-* Coming Soon
+* Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/velocity-san-jose-2017-traffic-shifts-avoiding-disasters-at-scale)
 
 ### SRECon17 EMEA: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
 
-* Coming Soon
+* Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconeurope2017-reducing-mttr-and-false-escalations-event-correlation-at-linkedin)
+* Video [Usenix](https://www.usenix.org/conference/srecon17europe/program/presentation/kehoe-0)
 
 ### SRECon17 EMEA: Networks for SRE's: What do I need to know for troubleshooting applications
 
-* Coming Soon
+* Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconeurope2017-networks-for-sres)
+* Video [Usenix](https://www.usenix.org/conference/srecon17europe/program/presentation/kehoe)
 
 
 2016
@@ -123,3 +133,6 @@ Articles
 
 * [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2017/05/trafficshift--load-testing-at-scale)
 
+### LinkedIn Engineering Blog: Couchbase Ecosystem at LinkedIn
+
+* [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2017/12/couchbase-ecosystem-at-linkedin)
