@@ -9,6 +9,9 @@ featuredpath = "publications"
 linktitle = ""
 title = "Publications"
 type = "page"
+image = "img/main/cover2.jpg"
+comments = false     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
 +++
 
 Conferences
