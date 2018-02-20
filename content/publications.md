@@ -14,18 +14,15 @@ comments = false     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 +++
 
-Conferences
-===========
-2018
-----
+## Conferences
+### 2018
 ##### The Road to GOTO Chicago: Chaos Tour
 * [Coming Soon](https://medium.com/russmiles/the-road-to-goto-chicago-chaos-tour-cdff17a97a97)
 
 ##### Interop ITX 2018: The future of Reliability Engineering
 * [Coming Soon](http://schedule.interop.com/session/the-next-wave-of-reliability-engineering/853923)
 
-2017
-----
+### 2017
 ##### APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale
 * Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406)
 * Video: [YouTube](https://www.youtube.com/watch?v=gfrpAIuTnoc&t=9s)
@@ -50,8 +47,7 @@ Conferences
 * Video [Usenix](https://www.usenix.org/conference/srecon17europe/program/presentation/kehoe)
 
 
-2016
-----
+### 2016
 ##### Couchbase Connect 2016: Going all In: From single use-case to many
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbase-connect-2016-68421388)
 * Video: [YouTube](https://www.youtube.com/watch?v=1shb4UZON_I&t=3s)
@@ -69,8 +65,7 @@ Conferences
 * Video: [YouTube](https://www.youtube.com/watch?v=TYX5ihgIL7s)
 
 
-2015
-----
+### 2015
 ##### Couchbase Connect 2015: Couchbase at LinkedIn 2015
 * Presentation: [SlideShare](https://www.slideshare.net/slideshow/embed_code/key/9quM4qNUXJ0KO5)
 * Video: [YouTube](https://www.youtube.com/watch?v=TmjY1HJemi4)
@@ -78,17 +73,14 @@ Conferences
 ##### Strata + Hadoop World 2015: Couchbase, Kafka & Hadoop at LinkedIn
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbasetohadoopmattmichaeljustin-v4-44977611)
 
-2014
-----
+### 2014
 ##### Couchbase Connect 2014: Using Couchbase
 * Presentation: [SlideShare](http://www.slideshare.net/Couchbase/couchbase-at-linkedin-couchbase-connect-2014)
 * Video: [YouTube](https://www.youtube.com/watch?v=J9PTmSwZE-8)
 
 
-Talks
-=====
-2016
-----
+## Talks
+### 2016
 ##### Couchbase Silicon Valley Meetup Janurary: LinkedIn’s Big Data Pipeline with Kafka, Hadoop and Couchbase
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/couchbase-meetup-jan-2016)
 
@@ -96,15 +88,12 @@ Talks
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016)
 
 
-Articles
-========
-2016
-----
+## Articles
+### 2016
 ##### LinkedIn Engineering Blog: Getting to know Michael Kehoe
 * [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2016/02/getting-to-know-michael-kehoe)
 
-2017
-----
+### 2017
 ##### LinkedIn Engineering Blog: TrafficShift: Load Testing at Scale
 * [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2017/05/trafficshift--load-testing-at-scale)
 
