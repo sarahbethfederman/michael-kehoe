@@ -37,9 +37,15 @@ themesDir = "themes"
 
 [[menu.main]]
   name = "Blog"
-  weight = 3
+  weight = 4
   identifier = "blog"
   url = "/"
+
+[[menu.main]]
+  name = "Speaking"
+  weight = 3
+  identifier = "speaking"
+  url = "/speaking"
 
 [[menu.main]]
   name = "Publications"
@@ -58,7 +64,3 @@ themesDir = "themes"
   weight = 0
   identifier = "about"
   url = "/about"
-
-
-
-
