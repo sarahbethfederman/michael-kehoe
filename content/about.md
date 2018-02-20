@@ -2,7 +2,8 @@
 date = "2016-10-30T00:00:00+00:00"
 title = "About Michael"
 type = "page"
-
+comments = false     # set false to hide Disqus comments
+share = true        # set false to hide share buttons
 +++
 I am an engineer who prides himself on architecting reliable, scalable infrastructure. 
 
