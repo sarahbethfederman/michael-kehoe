@@ -16,5 +16,6 @@ Welcome to this week's wrap
 * A great view at how Software engineering is more than just writing code [here](https://medium.com/blacklane-engineering/the-heart-of-being-an-engineer-b97a1039acfb)
 * A good introduction to Prometheus [here](https://kjanshair.github.io/2018/02/20/prometheus-monitoring/)
 * A great piece on why engineering managers should do oncall [here](https://blog.usejournal.com/why-as-a-netflix-infrastructure-manager-am-i-on-call-bdc551ac01fe)
+* Mike Julian from Monitoring Weekly has started a new project called 'Your Next Hire'. A site based around hiring engineers [here](https://www.yournexthire.io/)
 
 Have a great week!
