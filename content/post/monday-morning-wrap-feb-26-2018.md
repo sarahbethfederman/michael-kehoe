@@ -1,9 +1,9 @@
 +++
 author = "mkehoe"
-date = "2018-02-19T00:00:00-08:00"
+date = "2018-02-26T00:00:00-08:00"
 draft = false
-title = "Michael's Morning Wrap - 19 February 2018"
-slug = "monday-morning-wrap-feb-19-2018"
+title = "Michael's Morning Wrap - 26 February 2018"
+slug = "monday-morning-wrap-feb-26-2018"
 tags = ["weekly-wrap"]
 image = "img/main/logo.jpg"
 comments = true     # set false to hide Disqus comments
