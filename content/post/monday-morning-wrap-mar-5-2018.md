@@ -12,13 +12,13 @@ menu = ""           # set "main" to add this content to the main menu
 +++
 Hi everyone, welcome to this week's wrap. I am now including a list of Meetups/ Events that may be of interest to my audience. These are all Bay Area based
 
-**News**
+### News
 * The Evolution of Distributed Systems Management [here](http://www.xkyle.com/the-evolution-of-distributed-systems-management/)
 * A brilliant guide from Redhat on container lingo [here](https://developers.redhat.com/blog/2018/02/22/container-terminology-practical-introduction/?utm_source=getresponse)
 * Github survives the largest DDOS ever [here](https://www.wired.com/story/github-ddos-memcached)
 * How to manage feature flag tech debt [here](https://www.split.io/blog/managing-feature-flag-debt-split/)
 
-**Events**
+### Events
 * [March 6th - Big Data Meetup @ LinkedIn - Tuning Spark & Hadoop Jobs with Dr Elephant](https://www.meetup.com/Big-Data-Meetup-LinkedIn/events/248234305/)
 * [March 7th - San Francisco Metrics Meetup](https://www.meetup.com/San-Francisco-Metrics-Meetup/events/248065916/)
 * [March 15th - BayLisa - Learning from the Fire Department: Experiences with Incident Command for IT](Learning from the Fire Department: Experiences with Incident Command for IT)
@@ -27,9 +27,8 @@ Hi everyone, welcome to this week's wrap. I am now including a list of Meetups/ 
 * [March 29th - Papers We Love (San Francisco)](https://www.meetup.com/papers-we-love-too/)
 * [April 4th - San Francisco meetups Meetup](https://www.meetup.com/San-Francisco-Metrics-Meetup/events/248066171/)
 
-**Paper of the Week**
-* B4: Experience with a Globally-Deployed
-Software Defined WAN [here](https://dl.acm.org/citation.cfm?id=2486019)
+### Paper of the Week
+* B4: Experience with a Globally-Deployed Software Defined WAN [here](https://dl.acm.org/citation.cfm?id=2486019)
 
-**RFC of the Week**
+### RFC of the Week
 * [RFC-8203: BGP Administrative Shutdown communication](https://tools.ietf.org/html/rfc8203)
