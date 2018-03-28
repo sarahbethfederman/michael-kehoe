@@ -43,6 +43,7 @@ You can find James Meickle’s presentation on ‘Ansible for SRE’ [here](http
 
 Update (March 28th, 8am):
 Tammy Butow posted her materials from her Chaos Engineering Bootcamp workshop:
+
 * [Github](https://github.com/tammybutow/chaos_engineering_bootcamp)
 * [Speaker Deck](https://speakerdeck.com/tammybutow/chaos-engineering-bootcamp-srecon-2018)
 
