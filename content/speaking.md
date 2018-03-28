@@ -27,6 +27,7 @@ I have spoken at the following events in the past few years:
 * Strata + Hadoop World
 
 ##### Meetups
+* DevopsExchange SF
 * The Road to GOTO Chicago: Chaos Tour
 * Couchbase Silicon Valley Meetup
 * SouthBay SRE Meetup

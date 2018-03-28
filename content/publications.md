@@ -16,9 +16,6 @@ share = true        # set false to hide share buttons
 
 ## Conferences
 ### 2018
-##### The Road to GOTO Chicago: Chaos Tour
-* [Coming Soon](https://medium.com/russmiles/the-road-to-goto-chicago-chaos-tour-cdff17a97a97)
-
 ##### Interop ITX 2018: The future of Reliability Engineering
 * [Coming Soon](http://schedule.interop.com/session/the-next-wave-of-reliability-engineering/853923)
 
@@ -87,6 +84,9 @@ share = true        # set false to hide share buttons
 ##### SouthBay SRE Meetup Jan 2016: LinkedIn Traffic Shifting
 * Presentation: [SlideShare](http://www.slideshare.net/MichaelKehoe3/southbay-sre-meetup-jan-2016)
 
+### 2018
+##### Road to GOTO Chicago: Chaos Tour
+* Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/sf-chaos-engineering-meetup-building-disaster-recovery-via-resilience-engineering)
 
 ## Articles
 ### 2016
@@ -99,3 +99,7 @@ share = true        # set false to hide share buttons
 
 ##### LinkedIn Engineering Blog: Couchbase Ecosystem at LinkedIn
 * [LinkedIn Engineering Blog](https://engineering.linkedin.com/blog/2017/12/couchbase-ecosystem-at-linkedin)
+
+### 2018
+##### Information Week: 3 Myths about the Site Reliability Engineer, Debunked
+* [Information Week](https://www.informationweek.com/devops/3-myths-about-the-site-reliability-engineer-debunked/d/d-id/1331300)
