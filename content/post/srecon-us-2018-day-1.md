@@ -41,4 +41,9 @@ Bridget Kromhout did a detailed `Kubernetes 101` session. From all accounts, it 
 
 You can find James Meickle’s presentation on ‘Ansible for SRE’ [here](https://docs.google.com/presentation/d/1gsAKw_BxP8MNF4HE2ZI5PKqM6m9NfHnH9omyLfcyUHg/edit)
 
-I spent a little bit of time in the LinkedIn Engineering booth, thanks for everyone who stopped by and say Hi! to us.
+Update (March 28th, 8am):
+Tammy Butow posted her materials from her Chaos Engineering Bootcamp workshop:
+* [Github](https://github.com/tammybutow/chaos_engineering_bootcamp)
+* [Speaker Deck](https://speakerdeck.com/tammybutow/chaos-engineering-bootcamp-srecon-2018)
+
+Finally, I spent a little bit of time in the LinkedIn Engineering booth, thanks for everyone who stopped by and say Hi! to us.
