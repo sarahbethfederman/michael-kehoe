@@ -19,8 +19,7 @@ _Nicole Forsgren & Jez Humble_
 Slides found [here](https://speakerdeck.com/jezhumble/if-you-dont-know-where-youre-going-it-doesnt-matter-how-fast-you-get-there). The talk generally was about strategic planning and measuring your performance/ success. This part of IT is actually very under-valued. 
 
 These Tweets sums up the presentation well:
-https://twitter.com/msuriar/status/979021720274092034
-https://twitter.com/msuriar/status/979022413185802240
+{{< tweet 979021720274092034 >}}
 {{< tweet 979022413185802240 >}}
 
 Some nice points about the mis-use of Velocity and Utilization as Key Performance Indicators (KPI).
