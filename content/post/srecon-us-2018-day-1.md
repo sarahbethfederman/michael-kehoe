@@ -47,4 +47,6 @@ Tammy Butow posted her materials from her Chaos Engineering Bootcamp workshop:
 * [Github](https://github.com/tammybutow/chaos_engineering_bootcamp)
 * [Speaker Deck](https://speakerdeck.com/tammybutow/chaos-engineering-bootcamp-srecon-2018)
 
+Update (March 29th, 12pm):
+Dan Luedtke did his own version of the Containers Workshop in Go. See the post [here](https://danrl.com/blog/2018/go-contain-me/)
 Finally, I spent a little bit of time in the LinkedIn Engineering booth, thanks for everyone who stopped by and say Hi! to us.
