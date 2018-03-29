@@ -36,6 +36,7 @@ Heirarchy of Needs in SRE:
 5. Product
 
 Problem Statement:
+
 * High Rate of Change
     * Trust but verify
     * Embrace the Error Budget
@@ -44,22 +45,26 @@ Problem Statement:
     * Dark Canaries
 
 Security Challenges are similar to SRE
+
 * Latency & perf impact
 * Cascading failure scenarios
 * Service Discovery
 
 Security Challenges
+
 * Authentation
 * Authorization
 * Access Control Logic
 
 Data center technologies can be all controlled with a single web page application.
+
 * Start with a known-good state
 * Asset management
 * Ensure visibility
 * Validate consistently and constantly
 
 Takeaways or Giveaways
+
 * Your data pipeline is your security lifeblood
 * Human-in-the-loop is your last resort, not your first option
 * All security solutions must be scalable
@@ -70,13 +75,15 @@ Takeaways or Giveaways
 
 **What it Really Means to Be an Effective Engineer**
 _Edmond Lau_
-See coleadership.com/srecon
-Effort <> Impact
-Impact = Hours spent x (impact produced/hours spent)
-leverage = impact produced/ hours spent
+
+* See coleadership.com/srecon
+* Effort <> Impact
+* Impact = Hours spent x (impact produced/hours spent)
+* Leverage = impact produced/ hours spent
 
 
 What are the high-leverage activities for engineers?
+
 * Do the simple thing first
 * Effective engineers invest in iteration speed
 * Effictive engineers validate their ideas early and often
@@ -90,9 +97,10 @@ and build infrastructure for their relationships
 
 **The Day the DNS died**
 Jeremy Blosser
-tinyurl.com/spdnstalk
+Slides [here](tinyurl.com/spdnstalk)
 
 Impact
+
 * Sending mail
 * Application traffic
 * Metrics 
@@ -100,26 +108,32 @@ Impact
 Diagnosing blind (without metrics) is difficult!
 
 resolv.conf is fiddly
+
 * Can only use first 3 entries
 
 Diagnosis
+
 * Assymetric DNS packet flow (94% packet loss)
 
 The Cause
+
 * [Undocumented] Connection tracking
 
 Response
+
 * Incident response was functional
 * Ability to respond was compromised
 * New DNS design required
 
 New Design
+
 * Dedicated VPC for isolation
 * Open security groups with ACLs
 * Seperate clusters for app/db vs MTA
 * Use DNSMasq for local caching
 
 Lessons learnt
+
 * Not all cloud limits are apparent
 * Instrument your support services and protect
 * It'a always a DNS problem...excpet when it's a firewall problem
@@ -130,18 +144,22 @@ _Lorenzo Salno_
 See new Fastly paper on load-balancing: Balancing of the edge: transport affinity without network state - NSDI paper
 
 PoP Deployments
+
 * Space and power are at a premium
 
 Architecture:
+
 * Building a smarter load balancer
 
 Methods:
+
 * machine learning - classifier
 * signal processing - filter
 * control theoery - controller
 
 Design
 Multiple stages system
+
 * Denoising - remove noise from input signal
 * Anomaly detection - identify misbehaving instance
 * Hysteresis filter - stabilize output
@@ -153,11 +171,13 @@ Host signals go into a filter which makes a decision about global state of host
 **Don't Ever Change! Are Imutable Deployments Really Simplier Faster, and Safer?**
 _Rob Hirschfelf_
 Immutable Patterns
+
 * Baseline + Config
 * Live Boot + Config
 * Image Deploy
 
 Image creation
+
 * Do the configuration and capture the immage into a portable format
 * This sounds like a lot of work and really slow
 * Yes, but it's faster, safer and more scalable
@@ -167,6 +187,7 @@ Image creation
 _Yoshinori Matsunobu_
 
 User Database
+
 * Stores Social Graph
 * Massively Sharded
 * Low latency
@@ -174,10 +195,12 @@ User Database
 * Pure Flash Storage
 
 What is MyRocks
+
 * MySQL on top of RocksDB
 * Open Source, distributed from MariaDB and Percona
 
 MyRocks Features
+
 * Clustered Index
 * Bloom filter and Column family
 * Transactions, including consistency betweenbinlog and RocksDB
@@ -188,11 +211,13 @@ MyRocks Features
 
 
 MyRocks pros vs InnoDB
+
 * Much smaller space (half compared to compressed InnoDB)
 * Writes are faster
 * Much smaller bytes written
 
 MyRocks cons vs InnoDB
+
 * Lack several features
     * No FK, Fulltext index, spactial index
 *  Must use Row based binary logging format
@@ -201,12 +226,14 @@ MyRocks cons vs InnoDB
 
 MyRocks migration - technical challenges
 Migration
+
 * Creating MyRocks instances without downtime
 * Creating second MyRocks instance without downtime
 * Shadow traffic tests
 * Promoting new master
 
 InnoDB vs MyRocks, from SRE PoV
+
 * Server is busier because of double density
 * Rocksdb is much newer database that changes rapidly
 * MyRocks/ RocksDB relies on BufferIO
@@ -215,11 +242,13 @@ InnoDB vs MyRocks, from SRE PoV
 * Faster writes means replication slaves lag less often
 
 Issue: Mitigating stalls
+
 * We upgraded kernel to 4.6
 * Changed data loading queries (schema changes) to use MyRocks bulk loading feature
 * COmmit stalls every few mins --> now nearly zero
 
 Issue: A few deleted rows re-appeared
+
 * Some of our secondary indexes had extra rows
 * Turned out to be a bug in RocksDB compactions that in rare cases on heavy deletions, tombstones might now have been handled correctly
 
@@ -227,6 +256,7 @@ Issue: Scanning outbound delete-markers
 Counting from one of the empty tables started taking a few minutes
 
 Lesons Learned
+
 * Learn how core components work
     * RocksDB depends on linux more than innodb
     * Understanding how Linux works helps to fix issues faster
