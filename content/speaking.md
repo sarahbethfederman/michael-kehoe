@@ -1,7 +1,7 @@
 +++
 author = "mkehoe"
 categories = ""
-date = "2018-02-20T15:39:30-08:00"
+date = "2018-05-06T15:39:30-08:00"
 description = ""
 featured = ""
 featuredalt = ""
@@ -28,6 +28,7 @@ I have spoken at the following events in the past few years:
 
 ##### Meetups
 * DevopsExchange SF
-* The Road to GOTO Chicago: Chaos Tour
+* SV Chaos Engineering Meetup
 * Couchbase Silicon Valley Meetup
+* SF Reliability Engineering Meetup
 * SouthBay SRE Meetup
