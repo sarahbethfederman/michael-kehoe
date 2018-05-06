@@ -19,22 +19,21 @@ share = true        # set false to hide share buttons
 * Interop ITX 2018: The future of Reliability Engineering
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/the-next-wave-of-reliability-engineering)
   * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/the-next-wave-of-reliability-engineering-interop-itx-2018)
-
 * Velocity New York 2018: How to Monitor Containers Correctly
   * Coming Soon
 
 ##### 2017
-*APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale*
-* Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406)
-* Video: [YouTube](https://www.youtube.com/watch?v=gfrpAIuTnoc&t=9s)
-*SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn*
-* Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/reducing-mttr-and-false-escalations-event-correlation-at-linkedin-73177586)
-* Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_mttr)
-*SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale*
-* Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconamericas2017-trafficshift-avoiding-disasters-at-scale)
-* Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_trafficshift)
-*Velocity San Jose 2017: Traffic shifts: Avoiding Disasters at Scale*
-* Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/velocity-san-jose-2017-traffic-shifts-avoiding-disasters-at-scale)
+* APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale
+  * Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/apricot-2017-trafficshifting-avoiding-disasters-improving-performance-at-scale-72682406)
+  * Video: [YouTube](https://www.youtube.com/watch?v=gfrpAIuTnoc&t=9s)
+* SRECon17 Americas: Reducing MTTR and False Escalations: Event Correlation at LinkedIn
+  * Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/reducing-mttr-and-false-escalations-event-correlation-at-linkedin-73177586)
+  * Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_mttr)
+* SRECon17 Americas: TrafficShift: Avoiding Disasters at Scale
+  * Presentation: [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconamericas2017-trafficshift-avoiding-disasters-at-scale)
+  * Video: [Usenix](https://www.usenix.org/conference/srecon17americas/program/presentation/kehoe_trafficshift)
+* Velocity San Jose 2017: Traffic shifts: Avoiding Disasters at Scale
+  * Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/velocity-san-jose-2017-traffic-shifts-avoiding-disasters-at-scale)
 
 *SRECon17 EMEA: Reducing MTTR and False Escalations: Event Correlation at LinkedIn*
 * Presentation [Slideshare](https://www.slideshare.net/MichaelKehoe3/sreconeurope2017-reducing-mttr-and-false-escalations-event-correlation-at-linkedin)
