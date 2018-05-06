@@ -16,12 +16,12 @@ share = true        # set false to hide share buttons
 
 ## Conferences
 ##### 2018
-*Interop ITX 2018: The future of Reliability Engineering*
-* Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/the-next-wave-of-reliability-engineering)
-* Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/the-next-wave-of-reliability-engineering-interop-itx-2018)
+* Interop ITX 2018: The future of Reliability Engineering
+  * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/the-next-wave-of-reliability-engineering)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/the-next-wave-of-reliability-engineering-interop-itx-2018)
 
-*Velocity New York 2018: How to Monitor Containers Correctly
-* Coming Soon
+* Velocity New York 2018: How to Monitor Containers Correctly
+  * Coming Soon
 
 ##### 2017
 *APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale*
