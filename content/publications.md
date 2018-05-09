@@ -71,6 +71,8 @@ share = true        # set false to hide share buttons
 ##### 2018
 * **Holberton School: Fireside Chat with LinkedIn Staff Site Reliability Engineer, Michael Kehoe**
   * [Meetup](https://www.meetup.com/Holberton-School/events/250291720/)
+* **SF Reliability Engineering - May Talks**
+  * [Meetup](https://www.meetup.com/San-Francisco-Reliability-Engineering/events/250351203/)
 * **Devops Exchange SF April 2018: How to Build Production-Ready Microservices**
   * [Meetup](https://www.meetup.com/DevOps-Exchange-SanFrancisco/events/249202634/)
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/building-productionready-microservices-devopsexchangesf)
