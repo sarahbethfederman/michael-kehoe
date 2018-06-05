@@ -1,7 +1,8 @@
 +++
 author = "mkehoe"
 categories = ["publications"]
-date = "2017-06-05T17:00:00+00:00"
+date = "2018-06-05T17:00:00+00:00"
+slug = "publication-updates-june-05-2018"
 title = "Publication Updates (June 05 2018)"
 image = "img/main/cover2.jpg"
 draft = false
