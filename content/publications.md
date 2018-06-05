@@ -21,6 +21,8 @@ share = true        # set false to hide share buttons
   * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/the-next-wave-of-reliability-engineering-interop-itx-2018)
 * **Velocity New York 2018: How to Monitor Containers Correctly**
   * Coming Soon
+* **PyBay 2018: Building Production-Ready Python Microservices**
+  * Coming Soon
 
 ##### 2017
 * **APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale**
