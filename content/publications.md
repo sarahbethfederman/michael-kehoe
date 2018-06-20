@@ -110,6 +110,6 @@ share = true        # set false to hide share buttons
 ## Podcasts
 ##### 2018
 * **Fullstack Journey (PacketPushers): Michael Kehoe**
-  * Coming Soon
+  * [PacketPushers](http://packetpushers.net/podcast/podcasts/full-stack-journey-022-site-reliability-engineering-sre-michael-kehoe/)
 * **NetworkCollective: Michael Kehoe**
   * Coming Soon
