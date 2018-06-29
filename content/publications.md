@@ -23,6 +23,8 @@ share = true        # set false to hide share buttons
   * Coming Soon
 * **PyBay 2018: Building Production-Ready Python Microservices**
   * Coming Soon
+* **Velocity London 2018: How to Monitor Containers Correctly**
+  * Coming Soon
 
 ##### 2017
 * **APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale**
