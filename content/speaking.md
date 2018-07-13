@@ -20,11 +20,18 @@ Hello, If you would like to chat with me about speaking at your conference/ meet
   * Date: August 16-17 2017
   * Topic: Building production-ready Python applications
   * [Site](https://pybay.com/)
-* Velocity New-York
+* Velocity New York
   * Date: October 1 2018
   * Topic: Monitoring containers correctly (Workshop)
   * [Site](https://conferences.oreilly.com/velocity/vl-ny/)
-
+* LISA 2018
+  * Date: October 29 2018
+  * Topic: Code-Yellow: Helping operations top-heavy teams the smart way.
+  * [Site](https://www.usenix.org/conference/lisa18)
+* Velocity London
+  * Date: October 31 2018
+  * Topic: Monitoring containers correctly (Workshop)
+  * [Site](https://conferences.oreilly.com/velocity/vl-eu/)
 
 I have spoken at the following events in the past few years:
 

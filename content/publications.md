@@ -23,6 +23,8 @@ share = true        # set false to hide share buttons
   * Coming Soon
 * **PyBay 2018: Building Production-Ready Python Microservices**
   * Coming Soon
+* **LISA18: Code-Yellow: Helping operations top-heavy teams the smart way**
+  * Coming Soon
 * **Velocity London 2018: How to Monitor Containers Correctly**
   * Coming Soon
 
@@ -114,4 +116,4 @@ share = true        # set false to hide share buttons
 * **Fullstack Journey (PacketPushers): Michael Kehoe**
   * [PacketPushers](http://packetpushers.net/podcast/podcasts/full-stack-journey-022-site-reliability-engineering-sre-michael-kehoe/)
 * **NetworkCollective: Michael Kehoe**
-  * Coming Soon
+  * [Network Collective](https://thenetworkcollective.com/2018/07/otc-site-reliability-engineering/)
