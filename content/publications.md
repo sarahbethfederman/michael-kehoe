@@ -100,6 +100,10 @@ share = true        # set false to hide share buttons
 ##### 2018
 * **Information Week: 3 Myths about the Site Reliability Engineer, Debunked**
   * [Information Week](https://www.informationweek.com/devops/3-myths-about-the-site-reliability-engineer-debunked/d/d-id/1331300)
+* **Devops.com: The Importance of Soft Skills in Engineering**
+  * [Devops.com](https://devops.com/the-importance-of-soft-skills-in-engineering/)
+* **PyBay: Meet Michael Kehoe: Building Production Ready Python Applications**
+  * [PyBay Medium](https://medium.com/pybay/meet-michael-kehoe-building-production-ready-python-applications-a22f735bcfc7)
 
 ##### 2017
 * **LinkedIn Engineering Blog: TrafficShift: Load Testing at Scale**
