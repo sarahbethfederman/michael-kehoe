@@ -22,7 +22,8 @@ Bastion hosts act as a gateway or 'jump' host into a secure network. The servers
 Bastion hosts typically have more strigent security postures. This includes more regular patching, more detailed logging and auditing.
 
 ## How
-Bastion setups are rather quiet simple, here are a few simple steps to set one up
+Bastion setups are rather quiet simple, here are a few simple steps to set one up:
+
 1. Provision a new server(s) that are ONLY dedicated for the purpose of bastion access
 2. Install any additional security measures (see the cyberciti reference below for specific recommendations
 3. Ensure that all servers in the secure network ONLY accept SSH connections from the bastion server(s)
