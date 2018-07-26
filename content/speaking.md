@@ -20,6 +20,10 @@ Hello, If you would like to chat with me about speaking at your conference/ meet
   * Date: August 16-17 2017
   * Topic: Building production-ready Python applications
   * [Site](https://pybay.com/)
+* Monitorama Europe
+  * Date: September 4 2018
+  * Topic: What the NTSB has taught us about Incident Management & Postmortems
+  * [Site](http://monitorama.eu/)
 * Velocity New York
   * Date: October 1 2018
   * Topic: Monitoring containers correctly (Workshop)
