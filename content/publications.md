@@ -77,6 +77,8 @@ share = true        # set false to hide share buttons
 
 ## Meetups/ Talks
 ##### 2018
+* **TBA (September 2019)**
+  * Coming Soon
 * **Holberton School: Fireside Chat with LinkedIn Staff Site Reliability Engineer, Michael Kehoe**
   * [Meetup](https://www.meetup.com/Holberton-School/events/250291720/)
 * **SF Reliability Engineering - May Talks**
