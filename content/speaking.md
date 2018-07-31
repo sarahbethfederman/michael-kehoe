@@ -24,9 +24,10 @@ Hello, If you would like to chat with me about speaking at your conference/ meet
   * Date: September 4 2018
   * Topic: What the NTSB has taught us about Incident Management & Postmortems
   * [Site](http://monitorama.eu/)
-* TBA
+* Papers We Love too
   * Date: September 20 2018
-  * Topic: DBA
+  * Topic: TBA
+  * [Site](https://www.meetup.com/papers-we-love-too/events/253315866/)
 * Velocity New York
   * Date: October 1 2018
   * Topic: Monitoring containers correctly (Workshop)
