@@ -32,6 +32,10 @@ Hello, If you would like to chat with me about speaking at your conference/ meet
   * Date: October 1 2018
   * Topic: Monitoring containers correctly (Workshop)
   * [Site](https://conferences.oreilly.com/velocity/vl-ny/)
+* All Day Devops
+  * Date: October 17 2018
+  * Topic: What the NTSB teaches us about incident management & postmortems
+  * [Site](https://www.alldaydevops.com/)
 * LISA 2018
   * Date: October 29 2018
   * Topic: Code-Yellow: Helping operations top-heavy teams the smart way.

@@ -25,6 +25,8 @@ share = true        # set false to hide share buttons
   * Coming Soon
 * **Velocity New York 2018: How to Monitor Containers Correctly**
   * Coming Soon
+* **All Day Devops: What the NTSB teaches us about incident management & postmortems**
+  * Coming Soon
 * **LISA18: Code-Yellow: Helping operations top-heavy teams the smart way**
   * Coming Soon
 * **Velocity London 2018: How to Monitor Containers Correctly**
@@ -121,7 +123,9 @@ share = true        # set false to hide share buttons
 
 ## Podcasts
 ##### 2018
+* **NetworkCollective: Breaking things on purpose**
+  * Coming August 22nd
+* **NetworkCollective: SRE**
+  * [Network Collective](https://thenetworkcollective.com/2018/07/otc-site-reliability-engineering/)
 * **Fullstack Journey (PacketPushers): Michael Kehoe**
   * [PacketPushers](http://packetpushers.net/podcast/podcasts/full-stack-journey-022-site-reliability-engineering-sre-michael-kehoe/)
-* **NetworkCollective: Michael Kehoe**
-  * [Network Collective](https://thenetworkcollective.com/2018/07/otc-site-reliability-engineering/)
