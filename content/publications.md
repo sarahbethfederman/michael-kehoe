@@ -20,7 +20,8 @@ share = true        # set false to hide share buttons
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/the-next-wave-of-reliability-engineering)
   * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/the-next-wave-of-reliability-engineering-interop-itx-2018)
 * **PyBay 2018: Building Production-Ready Python Microservices**
-  * Coming Soon
+  * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/pybay-2018-productionready-python-applications)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/pybay-2018-production-ready-python-applications)
 * **Monitorama Europe: What the NTSB has taught us about Incident Management & Postmortems**
   * Coming Soon
 * **Velocity New York 2018: How to Monitor Containers Correctly**
