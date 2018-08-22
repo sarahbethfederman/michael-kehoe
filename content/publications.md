@@ -125,7 +125,7 @@ share = true        # set false to hide share buttons
 ## Podcasts
 ##### 2018
 * **NetworkCollective: Breaking things on purpose**
-  * Coming August 22nd
+  * [Network Collective](https://thenetworkcollective.com/2018/08/breaking-things/)
 * **NetworkCollective: SRE**
   * [Network Collective](https://thenetworkcollective.com/2018/07/otc-site-reliability-engineering/)
 * **Fullstack Journey (PacketPushers): Michael Kehoe**
