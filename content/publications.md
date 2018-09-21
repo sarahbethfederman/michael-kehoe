@@ -85,12 +85,14 @@ share = true        # set false to hide share buttons
 ##### 2018
 * **Papers We Love: Michael Kehoe & Gwen Shapira**
   * [Meetup](https://www.meetup.com/papers-we-love-too/events/253315866/)
+  * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/papers-we-love-sept-2018-007-democratically-finding-the-cause-of-packet-drops)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/papers-we-love-sept-2018-007-democratically-finding-the-cause-of-packet-drops)
 * **Holberton School: Fireside Chat with LinkedIn Staff Site Reliability Engineer, Michael Kehoe**
   * [Meetup](https://www.meetup.com/Holberton-School/events/250291720/)
 * **SF Reliability Engineering - May Talks**
   * [Meetup](https://www.meetup.com/San-Francisco-Reliability-Engineering/events/250351203/)
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/helping-operations-topheavy-teams-the-smart-way)
-  * Presentations [SpeakerDeck](https://speakerdeck.com/michaelkehoe/helping-operations-top-heavy-teams-the-smart-way-sf-reliability-engineering-meetup-may-2018)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/helping-operations-top-heavy-teams-the-smart-way-sf-reliability-engineering-meetup-may-2018)
 * **Devops Exchange SF April 2018: How to Build Production-Ready Microservices**
   * [Meetup](https://www.meetup.com/DevOps-Exchange-SanFrancisco/events/249202634/)
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/building-productionready-microservices-devopsexchangesf)
