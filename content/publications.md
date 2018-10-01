@@ -28,7 +28,13 @@ share = true        # set false to hide share buttons
   * SketchNotes [Ekaterina Budnikov via Twitter](https://twitter.com/KatjaBudnikov/status/1036981831789412352)
   * Video [Viemo](https://vimeo.com/289894687)
 * **Velocity New York 2018: How to Monitor Containers Correctly**
-  * Coming Soon
+  * Linux Container Basics
+    * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/linux-container-basics)
+    * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/container-basics)
+  * Monitoring Containers Correctly
+    * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/velocity-ny-2018-monitoring-containers-correctly)
+    * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/monitoring-containers-correctly)
+    * Github Repo [Github](https://github.com/michael-kehoe/container-monitoring-workshop)
 * **All Day Devops: What the NTSB teaches us about incident management & postmortems**
   * Coming Soon
 * **LISA18: Code-Yellow: Helping operations top-heavy teams the smart way**
