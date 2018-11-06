@@ -14,6 +14,11 @@ comments = false     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 +++
 
+## Books
+##### 2018
+* **Reducing MTTD for High Severity Incidents - A how-to guide for SREs**
+  * To be released soon by O'Reilly
+
 ## Conferences
 ##### 2018
 * **Interop ITX 2018: The future of Reliability Engineering**
@@ -35,12 +40,24 @@ share = true        # set false to hide share buttons
     * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/velocity-ny-2018-monitoring-containers-correctly)
     * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/monitoring-containers-correctly)
     * Github Repo [Github](https://github.com/michael-kehoe/container-monitoring-workshop)
+* **NewOps Days: The future of Reliability Engineering**
+  * Website [newopsdays.org](https://www.newopsdays.org/)
 * **All Day Devops: What the NTSB teaches us about incident management & postmortems**
-  * Coming Soon
+  * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/alldaydevops-what-the-ntsb-teaches-us-about-incident-management-postmortems)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/alldaydevops-what-the-ntsb-teaches-us-about-incident-management-and-postmortems)
 * **LISA18: Code-Yellow: Helping operations top-heavy teams the smart way**
-  * Coming Soon
+  * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/helping-operations-topheavy-teams-the-smart-way-121080456)
+  * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/helping-operations-top-heavy-teams-the-smart-way)
 * **Velocity London 2018: How to Monitor Containers Correctly**
-  * Coming Soon
+  * Linux Container Basics
+    * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/linux-container-basics)
+    * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/container-basics)
+  * Monitoring Containers Correctly
+    * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/velocity-ny-2018-monitoring-containers-correctly)
+    * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/monitoring-containers-correctly)
+    * Github Repo [Github](https://github.com/michael-kehoe/container-monitoring-workshop)
+* **QConSF: How to Build Production-Ready Microservices**
+  * Website [QConSF](https://qconsf.com/sf2018/presentation/building-production-ready-applications)
 
 ##### 2017
 * **APRICOT 2017: Trafficshifting: Avoiding Disasters & Improving Performance at Scale**
@@ -103,6 +120,7 @@ share = true        # set false to hide share buttons
   * [Meetup](https://www.meetup.com/DevOps-Exchange-SanFrancisco/events/249202634/)
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/building-productionready-microservices-devopsexchangesf)
   * Presentation [SpeakerDeck](https://speakerdeck.com/michaelkehoe/how-to-build-production-ready-microservices-devops-exchange-sf)
+  * Video [YouTube](https://www.youtube.com/watch?v=d4eHLJzdwuU)
 * **SV Chaos Engineering Meetup March 2018**
   * [Meetup](https://www.meetup.com/Chaos-Engineering-Community/events/248463682/)
   * Presentation: [SlideShare](https://www.slideshare.net/MichaelKehoe3/sf-chaos-engineering-meetup-building-disaster-recovery-via-resilience-engineering)
@@ -141,3 +159,8 @@ share = true        # set false to hide share buttons
   * [Network Collective](https://thenetworkcollective.com/2018/07/otc-site-reliability-engineering/)
 * **Fullstack Journey (PacketPushers): Michael Kehoe**
   * [PacketPushers](http://packetpushers.net/podcast/podcasts/full-stack-journey-022-site-reliability-engineering-sre-michael-kehoe/)
+
+## Technical Book Reviews
+##### 2018
+* **Kubernetes Security - Operating Kubernetes and Applications Safely**
+  * [AquaSec](https://info.aquasec.com/kubernetes-security)
