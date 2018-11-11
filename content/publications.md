@@ -20,6 +20,10 @@ share = true        # set false to hide share buttons
   * To be released soon by O'Reilly
 
 ## Conferences
+##### 2019
+* **Interop ITX 2019: An Introduction to Network Reliability Engineering**
+  * Details coming soon
+
 ##### 2018
 * **Interop ITX 2018: The future of Reliability Engineering**
   * Presentation [SlideShare](https://www.slideshare.net/MichaelKehoe3/the-next-wave-of-reliability-engineering)
