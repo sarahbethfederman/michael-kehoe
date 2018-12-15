@@ -140,6 +140,8 @@ share = true        # set false to hide share buttons
 
 ## Articles
 ##### 2018
+* **InfoQ: The InfoQ eMag: Chaos Engineering**
+  * [InfoQ](https://www.infoq.com/minibooks/emag-chaos-engineering)
 * **Information Week: 3 Myths about the Site Reliability Engineer, Debunked**
   * [Information Week](https://www.informationweek.com/devops/3-myths-about-the-site-reliability-engineer-debunked/d/d-id/1331300)
 * **Devops.com: The Importance of Soft Skills in Engineering**
