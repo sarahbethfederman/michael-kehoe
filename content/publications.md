@@ -17,10 +17,12 @@ share = true        # set false to hide share buttons
 ## Books
 ##### 2018
 * **Reducing MTTD for High Severity Incidents - A how-to guide for SREs**
-  * To be released soon by O'Reilly
+  * Available [here](https://www.oreilly.com/library/view/reducing-mttd-for/9781492046202/)
 
 ## Conferences
 ##### 2019
+* **SRECon Americas 2019: Code-Yellow: Helping operations top-heavy teams the smart way**
+  * Details coming soon 
 * **Interop ITX 2019: An Introduction to Network Reliability Engineering**
   * Details coming soon
 
