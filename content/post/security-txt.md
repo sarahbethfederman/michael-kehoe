@@ -11,6 +11,7 @@ share = true        # set false to hide share buttons
 menu = ""           # set "main" to add this content to the main menu
 +++
 `security.txt` is a draft IETF standard for websites (webmasters) to communicate security vulnerability/ research policy. The purpose of the standard is to communicate in a standardized manner. The abstract of the RFC states:
+
 >  When security vulnerabilities are discovered by independent security
    researchers, they often lack the channels to report them properly.
    As a result, security vulnerabilities may be left unreported.  This
