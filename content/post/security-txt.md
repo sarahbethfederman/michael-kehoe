@@ -10,9 +10,6 @@ comments = true     # set false to hide Disqus comments
 share = true        # set false to hide share buttons
 menu = ""           # set "main" to add this content to the main menu
 +++
-
-`robots.txt` was created in 1994 as a means to communicate policy between web-masters and web-crawlers/ web robots. robots.txt, despite being universally adopted, never became an official IETF standard.
-
 `security.txt` is a draft IETF standard for websites (webmasters) to communicate security vulnerability/ research policy. The purpose of the standard is to communicate in a standardized manner. The abstract of the RFC states:
 >  When security vulnerabilities are discovered by independent security
    researchers, they often lack the channels to report them properly.
@@ -23,23 +20,13 @@ menu = ""           # set "main" to add this content to the main menu
 
 # Specification
 The `security.txt` file contains seven fields:
-1. Acknowledgements: This directive allows you to link to a page where security
-   researchers are recognized for their reports. The link MUST begin with "https://".
-2. Canonical: This directive indicates the canonical URI where the security.txt
-   file is located. The link MUST begin with "https://".
-3. Contact: This directive allows you to provide an address that researchers
-   SHOULD use for reporting security vulnerabilities.  The value MAY be
-   an email address, a phone number and/or a web page with contact
-   information. This directive MUST be present in a security.txt file. The link MUST begin with "https://".
-4. Encryption: This directive allows you to point to an encryption key that security
-   researchers SHOULD use for encrypted communication. The link MUST begin with "https://".
-5. Hiring: The "Hiring" directive is used for linking to the vendor's security-
-   related job positions.
-6. Policy: This directive allows you to link to where your security policy and/
-   or disclosure policy is located. The link MUST begin with "https://".
-7. Preffered-Languages:  This directive can be used to indicate a set of natural languages
-   that are preferred when submitting security reports.  This set MAY
-   list multiple values, separated by commas.
+1. Acknowledgements: This directive allows you to link to a page where security researchers are recognized for their reports. The link MUST begin with "https://".
+2. Canonical: This directive indicates the canonical URI where the security.txt file is located. The link MUST begin with "https://".
+3. Contact: This directive allows you to provide an address that researchers SHOULD use for reporting security vulnerabilities.  The value MAY be an email address, a phone number and/or a web page with contac information. This directive MUST be present in a security.txt file. The link MUST begin with "https://".
+4. Encryption: This directive allows you to point to an encryption key that security researchers SHOULD use for encrypted communication. The link MUST begin with "https://".
+5. Hiring: The "Hiring" directive is used for linking to the vendor's security-related job positions.
+6. Policy: This directive allows you to link to where your security policy and/ or disclosure policy is located. The link MUST begin with "https://".
+7. Preffered-Languages:  This directive can be used to indicate a set of natural languages that are preferred when submitting security reports.  This set MAY list multiple values, separated by commas.
 
 Web-based services should place the security.txt file under the `/.well-known/` path; e.g. `https://example.com/.well-known/security.txt`
 
